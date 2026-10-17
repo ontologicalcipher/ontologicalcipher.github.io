@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="FUNDANICS: examining the Stellar Distance Scaling Formula (SDSF), its arithmetic, assumptions, and limits.">
+<title>SDSF — FUNDANICS | Ontological Cipher</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#121b2d;--ink:#f4f0e7;--muted:#a9b5c8;--gold:#e4c27a;--line:#29364c;--cyan:#8bd8e8;--max:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#182745 0,transparent 42%),var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}a{color:var(--cyan);text-underline-offset:4px}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}.top{border-bottom:1px solid var(--line);padding:17px 0}.topin{display:flex;justify-content:space-between;align-items:center;gap:15px}.brand{color:var(--ink);text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.14em}.brand b{color:var(--gold);font:26px Georgia,serif;margin-right:8px}.top a.back{font-size:13px;text-decoration:none}.hero{padding:66px 0 44px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:800}.hero h1{font:400 clamp(46px,7vw,78px)/1.02 Georgia,serif;letter-spacing:-.04em;margin:13px 0 20px}.hero h1 em{color:var(--gold);font-style:normal}.lead{color:var(--muted);max-width:620px}.tag{display:inline-block;border:1px solid #6a5939;color:var(--gold);padding:5px 10px;border-radius:99px;font-size:11px;letter-spacing:.08em;margin-top:10px}.orbit{min-height:300px;display:grid;place-items:center;position:relative;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#121d32,#0d1425)}.orbit svg{width:100%;max-width:390px;overflow:visible}.orbit .ring{fill:none;stroke:#53647e;stroke-width:1.1;stroke-dasharray:4 7}.orbit .planet{transform-origin:190px 150px;animation:orbit 18s linear infinite}.orbit .moon{transform-origin:190px 150px;animation:orbit 7s linear infinite reverse}.sun{fill:#f1d58e;filter:drop-shadow(0 0 14px #d9ad5a)}@keyframes orbit{to{transform:rotate(360deg)}}.section{padding:28px 0 34px}.section h2{font:400 clamp(28px,4vw,40px)/1.15 Georgia,serif;margin:8px 0 14px}.section p{color:var(--muted);max-width:780px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:linear-gradient(145deg,#141e31,#101827);border:1px solid var(--line);border-radius:14px;padding:23px;min-width:0}.formula{font:clamp(19px,3vw,27px)/1.6 Georgia,serif;color:var(--gold);overflow-wrap:anywhere;margin:15px 0}.small{font-size:13px;color:var(--muted)}label{display:block;color:var(--muted);font-size:13px;margin:13px 0 5px}input,select{width:100%;min-width:0;background:#0b1220;color:var(--ink);border:1px solid #40516b;border-radius:8px;padding:12px;font:inherit}button{border:0;border-radius:8px;background:var(--gold);color:#151725;font-weight:800;padding:12px 16px;margin-top:14px;font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.result{margin-top:16px;padding:14px;border-left:3px solid var(--gold);background:#0b1425;overflow-wrap:anywhere}.result strong{display:block;font-size:24px;color:var(--gold);font-weight:600}.status{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--cyan)}ul{padding-left:20px;color:var(--muted)}li{margin:8px 0}.refs{display:grid;gap:10px}.refs a{overflow-wrap:anywhere}.foot{margin-top:40px;border-top:1px solid var(--line);padding:22px 0 35px;color:#8492a7;font-size:12px}.fade{animation:rise .8s both}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@media(max-width:720px){.hero{grid-template-columns:1fr;padding-top:44px}.orbit{min-height:245px}.grid{grid-template-columns:1fr}.panel{padding:19px}.topin{align-items:flex-start}.hero h1{font-size:clamp(44px,12vw,66px)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap topin"><a class="brand" href="/"><b>◈</b>ONTOLOGICAL CIPHER</a><a class="back" href="/">← Main site</a></div></header>
+<main class="wrap">
+<section class="hero fade">
+<div><div class="eyebrow">FUNDANICS · Research note 001</div><h1>Stellar Distance<br><em>Scaling Formula</em></h1><p class="lead">An exploratory mathematical relationship proposed for examination. This page separates the formula's arithmetic from the much bigger question of whether it describes a measurable physical relationship.</p><span class="tag">HYPOTHESIS · NOT VALIDATED</span></div>
+<div class="orbit" role="img" aria-label="Animated schematic illustration of Earth, Moon and Sun with orbital paths; not to scale">
+<svg viewBox="0 0 380 300" aria-hidden="true">
+<circle class="ring" cx="190" cy="150" r="112"/><circle class="ring" cx="190" cy="150" r="66"/>
+<circle class="sun" cx="190" cy="150" r="19"/>
+<g class="planet"><circle cx="190" cy="84" r="7" fill="#72c8df"/><circle cx="190" cy="84" r="11" fill="none" stroke="#72c8df" opacity=".45"/></g>
+<g class="moon"><circle cx="190" cy="38" r="4" fill="#e9e6dd"/></g>
+<text x="218" y="155" fill="#f1d58e" font-size="11">Sun</text><text x="202" y="80" fill="#8bd8e8" font-size="10">Earth</text><text x="200" y="35" fill="#c9d1dd" font-size="10">Moon</text>
+<text x="190" y="282" text-anchor="middle" fill="#8796ad" font-size="10" letter-spacing="2">SCHEMATIC · NOT TO SCALE</text>
+</svg></div>
+</section>
+<section class="section">
+<div class="eyebrow">01 / Proposed relationship</div><h2>The formula</h2>
+<div class="panel"><div class="formula">R = D<sub>star</sub> × (D<sub>Sun–Earth</sub> ÷ D<sub>Moon–Earth</sub>)</div><p>Using the mean reference distances in kilometres, the scale factor is approximately 389.17.</p><p class="small">D<sub>Sun–Earth</sub> = 149,597,870.7 km (1 astronomical unit). D<sub>Moon–Earth</sub> = 384,400 km (mean distance). R has the same distance unit as D<sub>star</sub>.</p></div>
+</section>
+<section class="section">
+<div class="eyebrow">02 / Explore the arithmetic</div><h2>Interactive calculator</h2>
+<div class="grid">
+<div class="panel"><p>Enter a stellar distance to calculate the scaled result. This calculator applies the stated ratio only; it does not independently determine a star's distance.</p>
+<label for="distance">Stellar distance</label><input id="distance" type="number" min="0" step="any" value="4.246">
+<label for="unit">Distance unit</label><select id="unit"><option value="ly">light-years</option><option value="pc">parsecs</option><option value="km">kilometres</option></select>
+<button id="calculate" type="button">Calculate scaled value</button>
+<div class="result" aria-live="polite"><span class="small">Scaled result R</span><strong id="answer">—</strong><span class="small" id="working">Enter a non-negative distance.</span></div></div>
+<div class="panel"><div class="status">Worked example</div><h3>Proxima Centauri</h3><p>Using the approximate distance of 4.246 light-years as an input:</p><div class="formula">4.246 × 389.17 ≈ 1,652.7 ly</div><p class="small">This is the formula's output, not a newly measured distance or evidence that the scaling factor has a physical interpretation.</p></div>
+</div>
+</section>
+<section class="section">
+<div class="eyebrow">03 / Scientific assessment</div><h2>What the calculation establishes</h2>
+<div class="grid">
+<div class="panel"><div class="status">Established arithmetic</div><ul><li>The ratio of the two stated reference distances is about 389.17.</li><li>Multiplying a distance by a dimensionless ratio preserves its distance unit.</li><li>The calculator reproduces the proposed relationship for supplied inputs.</li></ul></div>
+<div class="panel"><div class="status">Not established</div><ul><li>The calculation does not independently measure stellar distance.</li><li>It does not show that the factor predicts a new observable quantity.</li><li>No new physical law or constant follows from the arithmetic alone.</li></ul></div>
+</div>
+<p>For SDSF to become a useful scientific model, it needs a clearly defined observable that can be obtained independently, predictions that differ from existing methods, and tests against measurements not used to create the formula.</p>
+</section>
+<section class="section">
+<div class="eyebrow">04 / References</div><h2>Reference values</h2>
+<div class="panel refs">
+<a href="https://iauarchive.eso.org/public/themes/measuring/" target="_blank" rel="noopener noreferrer">International Astronomical Union — measuring astronomical distances and the astronomical unit</a>
+<a href="https://science.nasa.gov/moon/by-the-numbers/" target="_blank" rel="noopener noreferrer">NASA — Moon by the numbers (mean Earth–Moon distance)</a>
+<a href="https://science.nasa.gov/exoplanets/other-stars-other-worlds/our-nearest-celestial-neighbor-an-exotic-3-star-system/" target="_blank" rel="noopener noreferrer">NASA — Proxima Centauri and its stellar system</a>
+<p class="small">The reference values provide context for the arithmetic. They do not independently validate SDSF as a physical model.</p>
+</div>
+</section>
+</main>
+<footer class="foot"><div class="wrap">FUNDANICS · Ontological Cipher · Exploratory research, with limitations stated explicitly.</div></footer>
+<script>
+(() => {
+ const input=document.getElementById('distance'), unit=document.getElementById('unit'), answer=document.getElementById('answer'), working=document.getElementById('working');
+ const factor=149597870.7/384400;
+ function calculate(){
+  const d=Number(input.value), u=unit.value;
+  if(input.value.trim()===''||!Number.isFinite(d)||d<0){answer.textContent='Invalid input';working.textContent='Enter a finite, non-negative distance.';return;}
+  const r=d*factor;
+  answer.textContent=new Intl.NumberFormat(undefined,{maximumSignificantDigits:9}).format(r)+' '+(u==='ly'?'ly':u==='pc'?'pc':'km');
+  working.textContent='Calculation: '+d+' × '+factor.toFixed(5)+' = '+new Intl.NumberFormat(undefined,{maximumSignificantDigits:9}).format(r)+'.';
+ }
+ document.getElementById('calculate').addEventListener('click',calculate);input.addEventListener('keydown',e=>{if(e.key==='Enter')calculate()});calculate();
+})();
+</script>
+</body>
+</html>
