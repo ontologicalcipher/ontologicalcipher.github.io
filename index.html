@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10151b">
+<meta name="description" content="Ontological Cipher — independent exploration of AI, computational systems, and open scientific questions.">
+<title>Ontological Cipher — Ideas, tested.</title>
+<style>
+:root{--bg:#10151b;--panel:#19212a;--ink:#f3f0e9;--muted:#aab4bf;--line:#303b47;--gold:#dfbf80;--max:1100px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 85% 0%,#293746,transparent 36rem),var(--bg);color:var(--ink);font:16px/1.7 system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:24px 0;border-bottom:1px solid var(--line)}
+.brand{font-size:13px;font-weight:750;letter-spacing:.12em}
+.brand span{color:var(--gold);font-family:Georgia,serif;font-size:23px;margin-right:10px}
+nav{display:flex;gap:24px;font-size:13px;color:var(--muted)}
+nav a:hover,.link:hover{color:var(--gold)}
+.hero{padding:100px 0 85px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+h1{font-size:clamp(46px,6.5vw,76px);line-height:1.07;letter-spacing:-.045em;margin:20px 0}
+h1 em{color:var(--gold);font-weight:400}
+.lead{max-width:600px;color:#c1c9d1;font-size:17px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 17px;border:1px solid #56616c;border-radius:4px;font-size:13px}
+.btn.primary{background:var(--gold);color:#171a1d;border-color:var(--gold);font-weight:700}
+.btn:hover{border-color:var(--gold)}
+.art{height:320px;border:1px solid #394653;border-radius:8px;background:linear-gradient(145deg,#202c38,#131920);display:grid;place-items:center;position:relative;overflow:hidden}
+.ring{position:absolute;width:245px;height:245px;border:1px solid #a58c61;border-radius:50%;transform:scaleX(.58) rotate(35deg)}
+.ring.two{transform:scaleX(.58) rotate(-35deg);border-color:#65798b}
+.core{width:105px;height:105px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;background:#151c23;color:var(--gold);font:35px Georgia,serif;z-index:1}
+.art small{position:absolute;bottom:17px;left:18px;color:var(--muted);font-size:10px;letter-spacing:.15em}
+section{padding:62px 0;border-top:1px solid var(--line)}
+.heading{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}
+h2{font-size:clamp(31px,4vw,43px);line-height:1.2;margin:8px 0}
+.intro{color:var(--muted);font-size:14px;max-width:430px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{padding:24px;border:1px solid var(--line);border-radius:6px;background:linear-gradient(145deg,var(--panel),#141a20);transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:#9b8359}
+.num{font-size:11px;color:var(--gold);letter-spacing:.15em}
+h3{font-size:24px;line-height:1.25;margin:20px 0 10px}
+.card p,.step p{font-size:13px;color:var(--muted)}
+.tag{display:inline-block;color:var(--gold);font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:12px}
+.method{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+.step{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:17px 0;border-bottom:1px solid var(--line)}
+.step b{color:var(--gold);font:21px Georgia,serif}
+.step h3{font:600 14px system-ui;margin:0}
+.step p{margin:5px 0 0}
+.note{padding:20px;border-left:2px solid var(--gold);background:var(--panel);color:var(--muted);font-size:13px;margin-top:28px}
+.contact{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:30px;border:1px solid var(--line);border-radius:7px;background:linear-gradient(110deg,#222e39,#151b22)}
+.contact p{color:var(--muted);font-size:14px;max-width:600px}
+footer{padding:26px 0 34px;color:#8e9aa6;font-size:11px;display:flex;justify-content:space-between;gap:15px}
+@media(max-width:740px){.hero{grid-template-columns:1fr;padding:65px 0 48px;gap:28px}.art{height:255px}.cards{grid-template-columns:1fr}.heading{display:block}.method{grid-template-columns:1fr;gap:15px}nav{gap:12px;font-size:11px}.brand{font-size:11px}.contact{align-items:flex-start;flex-direction:column}section{padding:45px 0}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<a class="brand" href="#home"><span>◈</span> ONTOLOGICAL CIPHER</a>
+<nav><a href="#work">Focus</a><a href="#method">Method</a><a href="#about">About</a></nav>
+</header>
+<main id="home">
+<div class="wrap hero">
+<div>
+<div class="label">Independent research · Ideas in progress</div>
+<h1>Curiosity is a start.<br><em>Evidence is the work.</em></h1>
+<p class="lead">A personal workspace for exploring difficult questions across computation, artificial intelligence, and the patterns we use to understand the world.</p>
+<div class="buttons"><a class="btn primary" href="#work">Explore the work ↗</a><a class="btn" href="#method">The method</a></div>
+</div>
+<div class="art" aria-label="Abstract orbital emblem"><div class="ring"></div><div class="ring two"></div><div class="core">OC</div><small>OBSERVE · QUESTION · TEST</small></div>
+</div>
+<section id="work">
+<div class="wrap">
+<div class="heading"><div><div class="label">Areas of exploration</div><h2>Questions worth working on.</h2></div><p class="intro">A growing collection of projects and experiments. Ideas are judged by evidence, not by how convincing they sound.</p></div>
+<div class="cards">
+<article class="card"><div class="num">01 / SYSTEMS</div><h3>Computational experiments</h3><p>Building systems, testing assumptions, and turning abstract ideas into things that can be inspected, measured, and improved.</p><div class="tag">Build · Measure · Refine</div></article>
+<article class="card"><div class="num">02 / INTELLIGENCE</div><h3>AI & personal tools</h3><p>Exploring useful AI agents, local-first workflows, and software that helps people think, create, and get work done.</p><div class="tag">Prototypes in progress</div></article>
+<article class="card"><div class="num">03 / OPEN QUESTIONS</div><h3>Patterns & undeciphered texts</h3><p>Investigating problems such as the Voynich Manuscript through competing explanations, careful analysis, and explicit uncertainty.</p><div class="tag">Hypotheses are not proof</div></article>
+</div>
+</div>
+</section>
+<section id="method">
+<div class="wrap">
+<div class="method">
+<div><div class="label">Working principles</div><h2>Keep the question.<br>Test the answer.</h2><p class="intro">A good idea should survive contact with evidence. A beautiful explanation is not enough on its own.</p></div>
+<div>
+<div class="step"><b>01</b><div><h3>Separate fact from hypothesis</h3><p>Distinguish established results, interpretations, and speculation.</p></div></div>
+<div class="step"><b>02</b><div><h3>Make claims testable</h3><p>State assumptions and look for observations that could prove an idea wrong.</p></div></div>
+<div class="step"><b>03</b><div><h3>Make work reproducible</h3><p>Preserve methods, calculations, code, and sources so others can inspect the process.</p></div></div>
+<div class="step"><b>04</b><div><h3>Update with new evidence</h3><p>Confidence should follow evidence—not attachment to an idea.</p></div></div>
+</div>
+</div>
+<div class="note"><strong style="color:var(--gold)">Research note:</strong> This site documents independent exploration, not peer-reviewed findings unless explicitly stated. Independent verification matters.</div>
+</div>
+</section>
+<section id="about">
+<div class="wrap contact"><div><div class="label">Behind the questions</div><h2>Built through curiosity.</h2><p>Ontological Cipher is an independent personal project: part workshop, part research notebook, part public record of ideas as they develop.</p></div><a class="btn" href="https://github.com/ontologicalcipher">View GitHub profile ↗</a></div>
+</section>
+</main>
+<footer class="wrap"><span><strong>ONTOLOGICAL CIPHER</strong> · Independent work, openly questioned.</span><span>© <span id="year">2026</span> · Made to evolve.</span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
