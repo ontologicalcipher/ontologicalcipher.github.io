@@ -1,35 +1,289 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3efeb">
-<meta name="description" content="The Ontological Cipher is an independent journal of physics, mathematics, philosophy and open research by Kratik.">
-<meta name="author" content="Kratik"><link rel="canonical" href="https://ontologicalcipher.github.io/">
-<meta property="og:title" content="The Journal — The Ontological Cipher"><meta property="og:description" content="An independent journal of physics, mathematics, philosophy and open inquiry."><meta property="og:url" content="https://ontologicalcipher.github.io/">
-<title>The Journal — The Ontological Cipher</title>
-<style>
-:root{color-scheme:light;--paper:#f3efeb;--ink:#171715;--muted:#6d6a65;--line:#c9c3bc;--green:#526f65;--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:#d6e0d8}.wrap{width:min(1370px,calc(100% - 9.5vw));margin-inline:auto}
-.topbar{height:88px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center}.brand{display:inline-flex;align-items:center;gap:11px;width:max-content}.brand-mark{height:54px;width:39px;background:#171715;color:var(--paper);display:grid;place-items:center;font:26px var(--serif);position:relative}.brand-mark:before,.brand-mark:after{content:"";position:absolute;border:1px solid #eee9e2;width:20px;height:34px;transform:rotate(25deg);border-radius:50%}.brand-mark:after{transform:rotate(-25deg)}.brand-name{font:400 22px/.92 var(--serif);letter-spacing:-.055em}.brand-name small{display:block;font:700 7px/1.8 var(--sans);letter-spacing:.22em;text-transform:uppercase;margin-top:5px}.top-center{text-align:center;font-size:9px;font-weight:700;letter-spacing:.34em;text-transform:uppercase}.menu-button{justify-self:end;border:0;background:transparent;padding:9px;cursor:pointer}.menu-glyph{display:block;font-size:27px;line-height:.8}.menu-label{display:block;font-size:8px;letter-spacing:.4em;font-weight:700;margin-top:10px}.menu-panel{display:none;position:absolute;z-index:20;right:4.75vw;top:76px;width:min(300px,90vw);padding:18px 24px;background:var(--paper);border:1px solid var(--line)}.menu-panel.open{display:grid}.menu-panel a{padding:13px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.08em}
-.hero{position:relative;padding:72px 0 43px;overflow:hidden}.hero-title{font:400 clamp(82px,13vw,184px)/.76 var(--serif);letter-spacing:-.085em;margin:0;text-transform:uppercase;max-width:850px;position:relative;z-index:1}.hero-title span{display:block}.hero-meta{position:absolute;right:12%;top:45%;width:260px;font-size:9px;line-height:2;letter-spacing:.29em;text-transform:uppercase;font-weight:700}.branch-art{position:absolute;right:-2.5%;top:0;width:21%;height:390px;opacity:.9;pointer-events:none}.branch-art svg{width:100%;height:100%}.hero-lower{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center;margin-top:47px}.intro{max-width:410px;font-size:14px;line-height:1.8;color:#3f3d38;margin:0}.controls{display:flex;justify-content:flex-end;gap:13px;flex-wrap:wrap}.pill{display:inline-flex;align-items:center;gap:10px;border:1px solid #77736d;border-radius:99px;padding:10px 17px;background:transparent;color:#25241f;font-size:9px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer}.pill:hover,.pill[aria-pressed=true]{background:#e8e2dc}.pill[aria-pressed=true]:before{content:"";width:9px;height:9px;border-radius:50%;background:#171715}.pill:not([aria-pressed=true]):before{content:"";width:9px;height:9px;border:1px solid #5d5a54;border-radius:50%}
-.featured{border-top:2px solid #c4beb7;padding:48px 0 54px}.feature-row{display:grid;grid-template-columns:190px minmax(0,1fr) 130px;gap:34px;align-items:center}.cover-wrap{position:relative;padding:12px;background:#b8c9c0;min-height:258px}.cover-stamp{position:absolute;z-index:2;top:-10px;left:50%;transform:translateX(-50%);background:#54786e;color:white;padding:8px 15px;font-size:8px;letter-spacing:.28em;white-space:nowrap}.cover-art{height:234px;position:relative;overflow:hidden;background:linear-gradient(180deg,#a8c1ac,#456e57 38%,#183b2d);display:grid;place-items:center}.cover-art:before{content:"";position:absolute;inset:-20% 12%;background:repeating-linear-gradient(78deg,transparent 0 13px,#ffffff20 14px 15px,transparent 16px 26px)}.cover-art:after{content:"";position:absolute;left:44%;right:44%;top:0;bottom:0;background:linear-gradient(#d9dfd0,#f4f0e5 70%,#b8b5a5);clip-path:polygon(46% 0,56% 0,100% 100%,0 100%)}.cover-monogram{position:absolute;z-index:2;top:16px;left:0;right:0;text-align:center;color:#f5f0e8;font:italic 24px var(--serif);letter-spacing:.1em}.cover-caption{position:absolute;z-index:3;bottom:11px;left:0;right:0;text-align:center;color:#f4f0e8;font-size:7px;letter-spacing:.32em}.feature-copy .eyebrow{font-size:9px;font-weight:700;letter-spacing:.25em;color:var(--green);text-transform:uppercase;margin-bottom:11px}.feature-copy h2{font:400 clamp(32px,4.2vw,58px)/1.03 var(--serif);letter-spacing:-.055em;text-transform:uppercase;margin:0 0 17px}.feature-copy p{font-size:13px;line-height:1.8;color:#45423d;max-width:660px;margin:0 0 14px}.read-link{display:inline-block;border-bottom:1px solid #26241f;padding-bottom:4px;font-size:9px;font-weight:700;letter-spacing:.25em;text-transform:uppercase}.issue-meta{align-self:start;text-align:right;font:30px/1.18 var(--serif);letter-spacing:-.04em}.issue-meta small{display:block;font:700 8px/2 var(--sans);letter-spacing:.3em;margin-top:18px}
-.catalogue{border-top:1px solid var(--line);padding:65px 0 75px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}.section-kicker{font-size:9px;color:var(--green);font-weight:700;letter-spacing:.27em;text-transform:uppercase;margin-bottom:12px}.section-title{font:400 clamp(36px,5vw,61px)/1 var(--serif);letter-spacing:-.06em;margin:0}.section-note{max-width:360px;color:var(--muted);font-size:12px;line-height:1.8;margin:0}.archive{border-top:1px solid var(--line)}.archive-item{display:grid;grid-template-columns:130px minmax(0,1fr) 130px;gap:26px;align-items:center;padding:25px 0;border-bottom:1px solid var(--line)}.archive-type{font-size:8px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--green)}.archive-item h3{font:400 clamp(22px,3vw,34px)/1.1 var(--serif);letter-spacing:-.035em;margin:0 0 8px}.archive-item p{font-size:11px;line-height:1.75;color:var(--muted);max-width:720px;margin:0}.archive-status{justify-self:end;font-size:8px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid #aaa49c;padding:7px 0}.archive-item[hidden]{display:none}
-.about-strip{background:#e9e5df;padding:65px 0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:start}.about-grid h2{font:400 clamp(36px,5vw,60px)/1.02 var(--serif);letter-spacing:-.06em;margin:0}.about-grid p{font-size:13px;line-height:1.9;color:#55514b;margin:0}.about-grid p+p{margin-top:14px}.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.social{border:1px solid #a9a39b;padding:10px 14px;font-size:9px;letter-spacing:.16em;text-transform:uppercase}.social:hover{background:#dcd7d0}footer{padding:24px 0 32px;display:flex;justify-content:space-between;gap:20px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#716d67}.footer-links{display:flex;gap:18px;flex-wrap:wrap}
-@media(max-width:800px){.wrap{width:calc(100% - 48px)}.topbar{height:76px}.brand-name{font-size:18px}.hero{padding-top:58px}.hero-title{font-size:clamp(74px,14vw,125px)}.hero-meta{right:7%;top:44%;width:190px;font-size:8px}.branch-art{width:25%;right:-7%;opacity:.55}.feature-row{grid-template-columns:145px minmax(0,1fr) 88px;gap:22px}.cover-wrap{min-height:208px;padding:9px}.cover-art{height:190px}.issue-meta{font-size:23px}}
-@media(max-width:600px){.wrap{width:calc(100% - 36px)}.topbar{grid-template-columns:1fr auto;height:72px}.top-center{display:none}.brand-mark{width:34px;height:43px;font-size:22px}.brand-name{font-size:17px}.menu-panel{top:64px;right:18px}.hero{padding:56px 0 32px}.hero-title{font-size:clamp(66px,17vw,103px);line-height:.82}.hero-meta{position:relative;top:auto;right:auto;width:210px;margin:28px 0 0 auto;font-size:8px}.branch-art{width:34%;height:270px;right:-12%;top:0;opacity:.32}.hero-lower{grid-template-columns:1fr;gap:22px;margin-top:27px}.intro{font-size:13px}.controls{justify-content:flex-start;gap:8px}.pill{padding:9px 12px;font-size:8px;letter-spacing:.14em}.featured{padding:30px 0 38px}.feature-row{grid-template-columns:100px minmax(0,1fr);gap:16px}.cover-wrap{min-height:155px;padding:7px}.cover-art{height:141px}.cover-monogram{font-size:18px}.cover-stamp{font-size:6px;padding:6px 9px}.cover-caption{font-size:5px}.feature-copy h2{font-size:25px}.feature-copy p{font-size:10px;line-height:1.65}.feature-copy .eyebrow{font-size:7px}.issue-meta{grid-column:1/-1;justify-self:start;text-align:left;font-size:17px}.issue-meta small{display:inline-block;margin:0 0 0 9px;font-size:7px}.catalogue{padding:48px 0}.section-head{display:block}.section-note{margin-top:15px}.archive-item{grid-template-columns:1fr auto;gap:9px 14px;padding:20px 0}.archive-type{grid-column:1/-1}.archive-item h3{font-size:24px}.archive-item p{font-size:10px}.archive-status{grid-column:2;grid-row:2}.about-strip{padding:48px 0}.about-grid{grid-template-columns:1fr;gap:20px}footer{flex-direction:column;font-size:8px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-</style></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f1f2ef">
+  <meta name="description" content="Ontological Cipher is an independent research and systems initiative exploring physics, mathematics, philosophy, software and security.">
+  <meta name="author" content="Kratik">
+  <link rel="canonical" href="https://ontologicalcipher.github.io/">
+  <title>Ontological Cipher — Research, Ideas & Systems</title>
+  <style>
+    :root{
+      color-scheme:light;
+      --paper:#f1f2ef;--paper-2:#e7e9e5;--ink:#171a18;--muted:#646c67;
+      --line:#c7ccc7;--accent:#65736b;--white:#fafbf8;--max:1240px;
+      --sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      --serif:Georgia,"Times New Roman",serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .wrap{width:min(var(--max),calc(100% - 72px));margin-inline:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(241,242,239,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:14px;min-width:0}
+    .mark{width:45px;height:45px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;position:relative;font:italic 30px var(--serif);flex:none}
+    .mark:before,.mark:after{content:"";position:absolute;inset:5px 11px;border:1px solid var(--ink);border-radius:50%;transform:rotate(42deg)}
+    .mark:after{transform:rotate(-42deg)}
+    .brand-name{font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
+    .brand-sub{margin-top:5px;color:var(--muted);font-size:8px;letter-spacing:.2em;text-transform:uppercase}
+    .navlinks{display:flex;align-items:center;gap:30px;font-size:10px;font-weight:750;letter-spacing:.13em;text-transform:uppercase}
+    .navlinks a{padding:10px 0;position:relative}
+    .navlinks a:after{content:"";position:absolute;left:0;right:100%;bottom:3px;height:1px;background:var(--ink);transition:right .25s}
+    .navlinks a:hover:after{right:0}
+    .menu-toggle{display:none;background:none;border:1px solid var(--line);width:44px;height:44px;cursor:pointer}
+    .hero{min-height:690px;padding:100px 0 66px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+    .orbit{position:absolute;width:min(58vw,700px);aspect-ratio:1;border:1px solid #c7ccc7;border-radius:50%;right:-9%;top:35px;pointer-events:none;animation:orbit 65s linear infinite}
+    .orbit:before,.orbit:after{content:"";position:absolute;inset:11%;border:1px solid #c7ccc7;border-radius:50%;transform:rotate(53deg) scaleX(.62)}
+    .orbit:after{transform:rotate(-53deg) scaleX(.62)}
+    .hero-top{position:relative;z-index:1;display:grid;grid-template-columns:1fr .42fr;gap:30px;align-items:end}
+    .eyebrow,.kicker{font-size:9px;letter-spacing:.23em;text-transform:uppercase;font-weight:800;color:var(--accent)}
+    h1{font-size:clamp(64px,11.7vw,158px);line-height:.82;letter-spacing:-.095em;text-transform:uppercase;margin:25px 0 0;font-weight:850;max-width:1000px}
+    h1 span{display:block;animation:rise .95s cubic-bezier(.2,.7,.2,1) both}
+    h1 span:nth-child(2){color:#7b8580;animation-delay:.15s}
+    .hero-statement{border-left:1px solid #8d9690;padding:8px 0 8px 19px;margin-bottom:8px;font-size:10px;line-height:2.1;letter-spacing:.2em;text-transform:uppercase;font-weight:750;max-width:230px}
+    .hero-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:35px;margin-top:76px}
+    .hero-copy{max-width:570px;font-size:16px;line-height:1.85;color:#444b46}
+    .hero-copy strong{color:var(--ink);font-weight:700}
+    .actions{display:flex;flex-wrap:wrap;gap:10px}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;padding:0 19px;border:1px solid var(--ink);background:var(--ink);color:white;font-size:9px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;transition:transform .2s,background .2s,color .2s}
+    .button:hover{transform:translateY(-3px);background:transparent;color:var(--ink)}
+    .button.ghost{background:transparent;color:var(--ink)}
+    .button.ghost:hover{background:var(--ink);color:white}
+    .scroll-note{position:absolute;right:36px;bottom:25px;font-size:8px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;writing-mode:vertical-rl}
+    section{padding:100px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+    .section-head h2{font-size:clamp(38px,6vw,76px);letter-spacing:-.075em;line-height:.94;margin:13px 0 0;font-weight:780}
+    .section-intro{max-width:400px;color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+    .feature{display:grid;grid-template-columns:minmax(220px,.7fr) 1.3fr;gap:42px;align-items:center;padding:28px 0;border-top:1px solid var(--ink)}
+    .feature-art{min-height:300px;background:#dce1dc;position:relative;overflow:hidden;display:grid;place-items:center}
+    .feature-art:before,.feature-art:after{content:"";position:absolute;width:78%;aspect-ratio:1;border:1px solid rgba(255,255,255,.7);border-radius:50%;animation:slowfloat 15s ease-in-out infinite alternate}
+    .feature-art:after{width:54%;animation-delay:-5s;animation-direction:alternate-reverse}
+    .art-core{width:1px;height:88%;background:#f5f6f1;position:absolute;box-shadow:0 0 30px #fff}
+    .art-label{position:absolute;top:20px;left:20px;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#45534b}
+    .art-mark{font:italic 42px var(--serif);color:#f4f5f1;z-index:1}
+    .feature-copy .kicker{margin-bottom:15px}
+    .feature-copy h3{font-size:clamp(30px,4.5vw,55px);line-height:.98;letter-spacing:-.065em;margin:0 0 19px;font-weight:780}
+    .feature-copy p{max-width:620px;color:#535b56;font-size:14px;line-height:1.9}
+    .text-link{display:inline-flex;gap:18px;align-items:center;margin-top:15px;padding-bottom:7px;border-bottom:1px solid var(--ink);font-size:9px;letter-spacing:.17em;text-transform:uppercase;font-weight:800}
+    .domains{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .domain{min-height:220px;padding:24px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .25s}
+    .domain:hover{background:var(--paper-2)}
+    .domain-no{font-size:9px;color:var(--accent);letter-spacing:.2em}
+    .domain h3{font-size:20px;letter-spacing:-.04em;margin:48px 0 10px}
+    .domain p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}
+    .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+    .filter{background:transparent;border:1px solid var(--line);padding:11px 15px;font-size:8px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+    .filter[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:white}
+    .archive{border-top:1px solid var(--ink)}
+    .entry{display:grid;grid-template-columns:160px 1fr 130px;gap:22px;align-items:center;padding:25px 0;border-bottom:1px solid var(--line)}
+    .entry[hidden]{display:none}
+    .entry-type{font-size:9px;color:var(--accent);letter-spacing:.17em;text-transform:uppercase;font-weight:800}
+    .entry h3{font-size:20px;letter-spacing:-.035em;margin:0 0 6px}
+    .entry p{font-size:12px;line-height:1.7;color:var(--muted);margin:0;max-width:690px}
+    .status{justify-self:end;font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:8px 10px}
+    .method{background:var(--paper-2)}
+    .method-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .method-item{padding:19px 15px;min-height:160px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .method-item b{font-size:10px;letter-spacing:.14em;color:var(--accent)}
+    .method-item h3{font-size:16px;margin:30px 0 8px;letter-spacing:-.03em}
+    .method-item p{font-size:11px;color:var(--muted);line-height:1.65;margin:0}
+    .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+    .about-grid h2{font-size:clamp(42px,6vw,78px);line-height:.92;letter-spacing:-.075em;margin:16px 0 0}
+    .about-copy{font-size:14px;line-height:1.95;color:#535b56;max-width:650px}
+    .about-copy p:first-child{margin-top:0}
+    .about-note{border-left:2px solid var(--accent);padding:5px 0 5px 17px;margin-top:28px;color:var(--ink);font-size:12px;line-height:1.8}
+    .contact{background:var(--ink);color:var(--paper);border-bottom:0}
+    .contact .kicker{color:#aab5ad}
+    .contact h2{font-size:clamp(48px,8vw,100px);letter-spacing:-.085em;line-height:.9;margin:18px 0 20px}
+    .contact p{max-width:500px;color:#c0c7c1;font-size:14px;line-height:1.8}
+    .contact .button{background:var(--paper);color:var(--ink);border-color:var(--paper);margin-top:15px}
+    .contact .button:hover{background:transparent;color:var(--paper)}
+    footer{padding:24px 0 35px;background:var(--ink);color:#c0c7c1}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:8px;letter-spacing:.16em;text-transform:uppercase}
+    .footer-links{display:flex;gap:22px}
+    .disclaimer{max-width:750px;font-size:10px;line-height:1.7;color:#929b94;margin:24px 0 0}
+    .reveal{opacity:0;transform:translateY(22px)}
+    .reveal.visible{opacity:1;transform:translateY(0);transition:opacity .8s ease var(--delay,0ms),transform .8s cubic-bezier(.2,.7,.2,1) var(--delay,0ms)}
+    @keyframes rise{from{opacity:0;transform:translateY(32px);clip-path:inset(0 0 100% 0)}to{opacity:1;transform:translateY(0);clip-path:inset(0)}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes slowfloat{from{transform:rotate(-15deg) scale(.88)}to{transform:rotate(15deg) scale(1.08)}}
+    @media(max-width:900px){.domains{grid-template-columns:repeat(2,1fr)}.method-grid{grid-template-columns:repeat(3,1fr)}.hero{min-height:620px}.hero-top{grid-template-columns:1fr .35fr}.hero-bottom{align-items:start;flex-direction:column;margin-top:55px}.scroll-note{display:none}}
+    @media(max-width:650px){
+      .wrap{width:calc(100% - 38px)}.nav{height:70px}.brand-name{font-size:10px}.brand-sub{font-size:7px}.mark{width:39px;height:39px}
+      .menu-toggle{display:grid;place-items:center}.menu-toggle span{width:18px;height:1px;background:var(--ink);position:relative}.menu-toggle span:before,.menu-toggle span:after{content:"";position:absolute;width:18px;height:1px;background:var(--ink);left:0}.menu-toggle span:before{top:-6px}.menu-toggle span:after{top:6px}
+      .navlinks{display:none;position:absolute;top:70px;left:0;right:0;padding:22px 20px 26px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:13px}
+      .navlinks.open{display:flex}.hero{min-height:0;padding:74px 0 45px}.hero-top{grid-template-columns:1fr;gap:25px}h1{font-size:clamp(52px,13vw,86px);line-height:.9}.hero-statement{font-size:9px;margin-left:4px}.orbit{width:370px;right:-260px;top:40px}.hero-bottom{margin-top:42px;gap:22px}.hero-copy{font-size:14px}.actions{width:100%}.button{flex:1;padding:0 12px;font-size:8px}
+      section{padding:68px 0}.section-head{display:block;margin-bottom:28px}.section-head h2{font-size:45px}.section-intro{margin-top:17px}.feature{grid-template-columns:1fr;gap:22px}.feature-art{min-height:230px}.feature-copy h3{font-size:35px}
+      .domains{grid-template-columns:1fr 1fr}.domain{min-height:190px;padding:17px 13px}.domain h3{font-size:17px;margin-top:38px}.domain p{font-size:11px}
+      .entry{grid-template-columns:1fr auto;gap:8px 15px;padding:20px 0}.entry-type{grid-column:1/-1}.entry h3{font-size:17px}.entry p{font-size:11px}.status{grid-column:2;grid-row:2/4;align-self:center;max-width:100px;text-align:center}
+      .method-grid{grid-template-columns:1fr 1fr}.method-item{min-height:145px}.about-grid{grid-template-columns:1fr;gap:27px}.about-grid h2{font-size:53px}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}
+    }
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal,.reveal.visible{opacity:1;transform:none}}
+  </style>
+</head>
 <body>
-<header class="wrap topbar"><a class="brand" href="/" aria-label="The Ontological Cipher home"><span class="brand-mark">O</span><span class="brand-name">Ontological Cipher<small>Independent research journal</small></span></a><div class="top-center">The Journal</div><button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="menuPanel"><span class="menu-glyph">☰</span><span class="menu-label">Menu</span></button><nav class="menu-panel" id="menuPanel" aria-label="Main menu"><a href="#catalogue">THE ARCHIVE</a><a href="/fundanics/">FUNDANICS</a><a href="/about/">ABOUT & LINKS</a><a href="https://github.com/ontologicalcipher" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></nav></header>
-<main><section class="wrap hero" id="home">
-<svg class="branch-art" viewBox="0 0 260 410" fill="none" aria-hidden="true"><g stroke="#20211e" stroke-width="1.25" stroke-linecap="round"><path d="M265 0C214 44 201 92 193 144S155 231 129 282s-43 88-65 128M218 54c-39-2-65-22-77-49M207 83c-35-9-57-1-78 19M195 118c-42-3-66 13-88 42M181 151c-37 3-60 26-79 54M163 192c-36 12-53 39-65 67M145 235c-28 18-39 39-49 66M141 8c-4 24 4 38 21 53M129 102c-5-21-20-35-40-43M107 160c-6-22-22-35-45-40M82 221c-9-21-25-31-47-34M64 279c-10-17-26-24-44-23M140 5c-18-1-30-7-40-19M146 20c-23 7-38 3-53-8M126 100c-23 8-39 6-57-5M111 116c-19 14-37 16-56 9M90 160c-22 13-40 14-58 7M75 178c-17 16-34 20-52 16M62 221c-21 12-37 12-54 6M49 244c-17 12-30 14-44 10M161 54c-4-18 1-31 13-43M169 61c17-12 29-13 43-9M78 43c-4-17-13-27-28-34M67 46c-17-8-30-8-44-2M62 120c-4-18-15-29-30-36M51 122c-18-7-32-6-46 1M37 188c-5-15-15-24-29-29M27 190c-14-4-26-1-38 8M129 282c-3-19-12-31-27-38M119 301c-19-7-33-5-48 5M96 351c-4-16-14-25-28-31M83 367c-15-4-28-1-40 8"/></g></svg>
-<h1 class="hero-title"><span>The</span><span>Journal</span></h1><div class="hero-meta">An independent journal of physics, mathematics, philosophy &amp; open inquiry</div>
-<div class="hero-lower"><p class="intro">Explore a catalogue of research notes, original hypotheses and investigations into the structures behind our understanding of reality. Ideas are presented with their assumptions, limitations and open questions.</p><div class="controls" role="group" aria-label="Research catalogue filter"><button class="pill" type="button" data-filter="all" aria-pressed="true">All research</button><button class="pill" type="button" data-filter="special" aria-pressed="false">Featured research only</button></div></div></section>
-<section class="wrap featured" aria-labelledby="featuredTitle"><div class="feature-row"><div class="cover-wrap"><span class="cover-stamp">RESEARCH NOTE</span><div class="cover-art"><span class="cover-monogram">O.C.</span><span class="cover-caption">PHYSICS · MATHEMATICS · INQUIRY</span></div></div><div class="feature-copy"><div class="eyebrow">Featured research · FUNDANICS</div><h2 id="featuredTitle">Stellar Distance Scaling Formula</h2><p>An exploratory mathematical relationship examining a proposed distance-scaling factor. The archive distinguishes the arithmetic of the formula from the separate question of whether it has physical meaning or empirical support.</p><a class="read-link" href="/fundanics/">Read this research note</a></div><div class="issue-meta">VOL. 01<br>NO. 01<small>IN DEVELOPMENT</small></div></div></section>
-<section class="wrap catalogue" id="catalogue"><div class="section-head"><div><div class="section-kicker">The collection / 001—</div><h2 class="section-title">Research catalogue</h2></div><p class="section-note">A living index of questions, models and conceptual frameworks. Labels describe the current stage of the work, not scientific acceptance.</p></div><div class="archive">
-<article class="archive-item" data-category="special"><div class="archive-type">01 / Mathematical model</div><div><h3><a href="/fundanics/">Stellar Distance Scaling Formula (SDSF)</a></h3><p>A proposed scaling relationship, with an interactive arithmetic example, stated assumptions and limitations.</p></div><span class="archive-status">Exploratory</span></article>
-<article class="archive-item" data-category="all"><div class="archive-type">02 / Conceptual hypothesis</div><div><h3>Time as a Friction</h3><p>An open conceptual hypothesis. A formal definition, mathematical consequences and falsifiable predictions are still required.</p></div><span class="archive-status">In development</span></article>
-<article class="archive-item" data-category="all"><div class="archive-type">03 / Notation framework</div><div><h3>The Ontological Cipher</h3><p>A proposed script-independent notation for representing ontological categories. Formal specification and independent evaluation remain open tasks.</p></div><span class="archive-status">In development</span></article>
-<article class="archive-item" data-category="all"><div class="archive-type">04 / Research notes</div><div><h3>FAME · FADH</h3><p>Concepts and working notes awaiting complete definitions, derivations and supporting documentation.</p></div><span class="archive-status">Working notes</span></article>
-</div></section>
-<section class="about-strip" id="about"><div class="wrap about-grid"><div><div class="section-kicker">About the journal</div><h2>Curiosity is a beginning.<br>Evidence is the standard.</h2></div><div><p><strong>The Ontological Cipher</strong> is the independent research identity of Kratik. It brings together scientific questions, mathematical modelling, philosophy and technical experimentation in one public archive.</p><p>This is an independent personal project, not a university, laboratory or peer-reviewed journal. Proposed ideas are identified as hypotheses and are not presented as established findings without evidence.</p><div class="socials"><a class="social" href="https://www.instagram.com/ontologicalcipher/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a class="social" href="https://github.com/ontologicalcipher" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="social" href="/about/">All profiles & channels ↗</a></div></div></div></section></main>
-<footer class="wrap"><span>© <span id="year">2026</span> · THE ONTOLOGICAL CIPHER</span><div class="footer-links"><a href="/fundanics/">FUNDANICS</a><a href="/about/">ABOUT</a><a href="#home">BACK TO TOP ↑</a></div></footer>
-<script>const menuButton=document.getElementById('menuButton'),menuPanel=document.getElementById('menuPanel');menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuPanel.classList.toggle('open',open)});menuPanel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menuButton.setAttribute('aria-expanded','false');menuPanel.classList.remove('open')}));document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.archive-item').forEach(item=>{item.hidden=filter==='special'&&!item.dataset.category.includes('special')})}));</script>
-</body></html>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Ontological Cipher home">
+      <span class="mark">O</span>
+      <span><span class="brand-name">Ontological Cipher</span><span class="brand-sub">Independent research &amp; systems</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#focus">Focus</a><a href="#research">Research</a><a href="#method">Method</a><a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="orbit" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-top">
+        <div>
+          <div class="eyebrow">Independent inquiry / Est. 2026</div>
+          <h1><span>Ontological</span><span>Cipher</span></h1>
+        </div>
+        <div class="hero-statement">Researching reality.<br>Decoding systems.<br>Questioning assumptions.</div>
+      </div>
+      <div class="hero-bottom">
+        <p class="hero-copy"><strong>An independent space for ideas that deserve examination.</strong> Exploring physics, mathematics, philosophy, software and security through original questions, structured reasoning and technical experimentation.</p>
+        <div class="actions"><a class="button" href="#research">Explore research <span>↗</span></a><a class="button ghost" href="#focus">Explore domains <span>↓</span></a></div>
+      </div>
+    </div>
+    <div class="scroll-note">Scroll to investigate ↓</div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="kicker">01 / Featured investigation</div><h2>Ideas under<br>examination.</h2></div>
+        <p class="section-intro">A public workspace for hypotheses, models and technical investigations. Proposals are not presented as established findings; assumptions and unanswered questions remain visible.</p>
+      </div>
+      <article class="feature reveal">
+        <div class="feature-art" aria-label="Abstract orbital geometry artwork"><span class="art-label">Research note / 001</span><span class="art-core"></span><span class="art-mark">O.C.</span></div>
+        <div class="feature-copy">
+          <div class="kicker">Mathematics / Astrophysics / Exploratory model</div>
+          <h3>Stellar Distance<br>Scaling Formula</h3>
+          <p>An exploratory mathematical relationship examining a proposed distance-scaling factor. The archive distinguishes the arithmetic of the formula from the separate question of whether it has physical meaning, empirical support or predictive value.</p>
+          <a class="text-link" href="#method">Examine the methodology <span>↗</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="focus">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="kicker">02 / Areas of inquiry</div><h2>Four connected<br>frontiers.</h2></div>
+        <p class="section-intro">Different disciplines. One consistent approach: define the question, expose the assumptions and test what can be tested.</p>
+      </div>
+      <div class="domains">
+        <article class="domain reveal"><div class="domain-no">A / 01</div><h3>Physics</h3><p>Physical models, fundamental questions, cosmology and the limits of explanation.</p></article>
+        <article class="domain reveal"><div class="domain-no">B / 02</div><h3>Mathematics</h3><p>Formal relationships, derivations, dimensional checks and mathematical consistency.</p></article>
+        <article class="domain reveal"><div class="domain-no">C / 03</div><h3>Ontology &amp; philosophy</h3><p>Existence, categories, knowledge, language and the structure of concepts.</p></article>
+        <article class="domain reveal"><div class="domain-no">D / 04</div><h3>Software &amp; security</h3><p>System architecture, automation, software experiments and defensive security research.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="archive">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="kicker">03 / Project index</div><h2>Research &amp;<br>systems archive.</h2></div>
+        <p class="section-intro">An evolving index of working ideas and prototypes. Publication status describes the maturity of documentation, not scientific acceptance.</p>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Filter archive">
+        <button class="filter" data-filter="all" aria-pressed="true">All work</button>
+        <button class="filter" data-filter="science" aria-pressed="false">Science</button>
+        <button class="filter" data-filter="ideas" aria-pressed="false">Ideas</button>
+        <button class="filter" data-filter="systems" aria-pressed="false">Systems</button>
+      </div>
+      <div class="archive">
+        <article class="entry reveal" data-category="science"><div class="entry-type">Science / Mathematics</div><div><h3>Stellar Distance Scaling Formula</h3><p>An exploratory distance-scaling proposal; mathematical derivation and empirical validity must be evaluated separately.</p></div><span class="status">Hypothesis</span></article>
+        <article class="entry reveal" data-category="science"><div class="entry-type">Physics / Conceptual model</div><div><h3>FAME</h3><p>A developing research concept. Formal definitions, derivations and testable consequences belong in its dedicated research record.</p></div><span class="status">In development</span></article>
+        <article class="entry reveal" data-category="science"><div class="entry-type">Physics / Conceptual model</div><div><h3>FADH</h3><p>A working concept requiring explicit assumptions, mathematical formulation and comparison with established physical models.</p></div><span class="status">In development</span></article>
+        <article class="entry reveal" data-category="ideas"><div class="entry-type">Philosophy / Foundations</div><div><h3>Time as a Friction</h3><p>A conceptual hypothesis exploring an alternative description of time. It requires operational definitions and falsifiable predictions.</p></div><span class="status">Hypothesis</span></article>
+        <article class="entry reveal" data-category="ideas"><div class="entry-type">Ontology / Language</div><div><h3>Ontological Cipher Hypothesis</h3><p>A proposed pasigraphic instruction framework: a script-independent notation system for encoding ontological categories.</p></div><span class="status">Research project</span></article>
+        <article class="entry reveal" data-category="systems"><div class="entry-type">Software / Security</div><div><h3>Independent Systems Experiments</h3><p>Prototypes exploring software architecture, automation, information handling and defensive security concepts.</p></div><span class="status">In development</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="method" id="method">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><div class="kicker">04 / Research standard</div><h2>Separate the claim<br>from the evidence.</h2></div>
+        <p class="section-intro">Every investigation should make clear what is known, what follows mathematically, what is proposed and what evidence would change the conclusion.</p>
+      </div>
+      <div class="method-grid">
+        <article class="method-item reveal"><b>01</b><h3>Established knowledge</h3><p>What accepted theory and reliable evidence currently support.</p></article>
+        <article class="method-item reveal"><b>02</b><h3>Mathematical results</h3><p>What follows from definitions, equations and stated assumptions.</p></article>
+        <article class="method-item reveal"><b>03</b><h3>Proposed hypothesis</h3><p>The new claim, clearly labelled and precisely defined.</p></article>
+        <article class="method-item reveal"><b>04</b><h3>Speculation &amp; limits</h3><p>Unverified interpretations, uncertainties and possible failure points.</p></article>
+        <article class="method-item reveal"><b>05</b><h3>Experimental tests</h3><p>What observation or experiment could support or falsify the claim.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="reveal"><div class="kicker">05 / About the project</div><h2>Build ideas.<br>Test limits.<br>Keep evidence.</h2></div>
+      <div class="about-copy reveal">
+        <p><strong>Ontological Cipher</strong> is an independent research and systems initiative by Kratik. It brings scientific questions, mathematical modelling, philosophy and technical experimentation into one evolving body of work.</p>
+        <p>The goal is not to make every idea sound certain. The goal is to make ideas precise enough to inspect, challenge, improve or reject. Research notes should expose their assumptions and distinguish speculation from demonstrated results.</p>
+        <div class="about-note">Independent work. Open questions. Transparent reasoning. Evidence before certainty.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="connect">
+    <div class="wrap reveal">
+      <div class="kicker">06 / Follow the work</div>
+      <h2>Stay curious.<br>Stay critical.</h2>
+      <p>New research notes, mathematical explorations and software experiments will be added as their documentation develops.</p>
+      <a class="button" href="https://github.com/ontologicalcipher" target="_blank" rel="noopener noreferrer">Explore the GitHub profile <span>↗</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row"><span>© <span id="year">2026</span> Ontological Cipher</span><div class="footer-links"><a href="#home">Back to top ↑</a><a href="#research">Research index</a></div></div>
+    <p class="disclaimer">Independent research and educational content. Hypotheses and exploratory models are not established scientific findings unless explicitly identified and supported as such. All work remains open to scrutiny, correction and revision.</p>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.navlinks');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  });
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false');
+  }));
+  document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => {
+    const category = button.dataset.filter;
+    document.querySelectorAll('.filter').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    document.querySelectorAll('.entry').forEach(entry => {
+      entry.hidden = category !== 'all' && entry.dataset.category !== category;
+    });
+  }));
+  const revealItems = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealItems.forEach((item,index) => item.style.setProperty('--delay', `${(index % 4) * 75}ms`));
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    }), {threshold:.12,rootMargin:'0px 0px -35px 0px'});
+    revealItems.forEach(item => observer.observe(item));
+  } else revealItems.forEach(item => item.classList.add('visible'));
+</script>
+</body>
+</html>
