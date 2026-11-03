@@ -1,57 +1,454 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="An exploratory hypothesis about the description of time. It is not an established physical theory.">
-<title>Time as a Friction — Ontological Cipher</title>
-<link rel="canonical" href="https://ontologicalcipher.github.io/research/time-as-a-friction/">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f2f2ef"><meta name="description" content="Time as a Friction — Ontological Cipher research archive.">
+<title>Time as Friction — Ontological Cipher</title>
 <style>
-:root{color-scheme:light;--bg:#f3f3f0;--ink:#171918;--muted:#686f6b;--line:#c9ceca;--panel:#e8eae6}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 Inter,system-ui,sans-serif}
-.wrap{width:min(900px,calc(100% - 40px));margin:auto}
-header{border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-size:11px;font-weight:800;letter-spacing:.17em;text-decoration:none;color:var(--ink)}
-a{color:inherit;text-underline-offset:4px}.back{font-size:12px;color:var(--muted);text-decoration:none}
-main{padding:70px 0 100px}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:800}
-h1{font-size:clamp(40px,8vw,72px);line-height:1.05;letter-spacing:-.06em;margin:20px 0}
-h2{font-size:22px;letter-spacing:-.03em;margin:36px 0 10px}
-.lead{max-width:700px;color:var(--muted)}.status{display:inline-block;margin:15px 0 25px;padding:6px 10px;border:1px solid var(--line);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
-article{border-top:1px solid var(--line);padding:20px 0}
-.notice{padding:16px;background:var(--panel);border-left:2px solid #777f79;color:#4d5650;font-size:13px}
-.list{border-top:1px solid var(--line)}.item{display:block;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none}
-.item strong{font-weight:650}.item small{display:block;color:var(--muted);font-size:12px;margin-top:5px}
-footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:11px}
-</style>
-</head>
-<body>
-<header><div class="wrap nav"><a class="brand" href="/">ONTOLOGICAL CIPHER</a><a class="back" href="/research/">Research directory →</a></div></header>
-<main class="wrap">
-<div class="eyebrow">Foundations of physics / Hypothesis</div>
-<h1>Time as a Friction</h1>
-<p class="lead">An exploratory hypothesis about the description of time. It is not an established physical theory.</p>
-<span class="status">Research record · In development</span>
-<article>
-<h2>Original concept</h2>
-<p class="notice">AUTHOR INPUT REQUIRED — Insert the original hypothesis in your own words. Define the proposed mechanism, measurable quantities, mathematical model and falsifiable predictions.</p>
-</article>
-<article>
-<h2>Established knowledge</h2>
-<p>Document accepted theories and reliable evidence separately from the original proposal. Cite primary scientific sources.</p>
-</article>
-<article>
-<h2>Mathematical consequences</h2>
-<p>Include equations, variable definitions, units, assumptions and complete derivations. Check dimensional and mathematical consistency.</p>
-</article>
-<article>
-<h2>Hypothesis and speculation</h2>
-<p>Clearly distinguish the original hypothesis from established facts and mathematical consequences. Do not present speculation as a verified result.</p>
-</article>
-<article>
-<h2>Experimental verification</h2>
-<p>Specify measurable predictions, controls, reproducible methods and observations that could falsify the proposal.</p>
-</article>
-</main>
-<footer><div class="wrap">ONTOLOGICAL CIPHER · Independent research</div></footer>
-</body>
-</html>
+:root{--bg:#f2f2ef;--ink:#191c1a;--muted:#747b76;--line:#cbd0cb;--accent:#65716a;--panel:#e8eae6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}.top{height:3px;background:var(--ink)}header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(6vw,22px);position:relative;z-index:2;background:rgba(242,242,239,.88);backdrop-filter:blur(14px)}
+.brand{font-size:11px;font-weight:800;letter-spacing:.19em}.back{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.hero{position:relative;min-height:390px;padding:90px max(8vw,24px) 65px;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.visual{position:absolute;z-index:-1;width:min(52vw,520px);height:auto;right:4%;top:50%;transform:translateY(-50%);opacity:.55;overflow:visible}
+.visual g{fill:none;stroke:#87918a;stroke-width:1;vector-effect:non-scaling-stroke}.visual circle{fill:var(--bg)}.visual .core{fill:#68766d;stroke:none}
+.orbit{transform-origin:160px 120px;animation:spin 48s linear infinite}.waves{animation:wave 12s ease-in-out infinite alternate}.res circle{transform-origin:160px 120px;animation:pulse 6s ease-in-out infinite}.res circle:nth-child(2n){animation-delay:-3s}
+.path{animation:pathmove 8s ease-in-out infinite alternate}.path circle{fill:#68766d}.radial{transform-origin:160px 120px;animation:spin 65s linear infinite}.gridlines{opacity:.8}.phase{stroke:#596a60;stroke-width:2;stroke-dasharray:8 8;animation:dash 18s linear infinite}
+.net{animation:network 16s ease-in-out infinite alternate}.net circle{fill:#68766d;animation:node 4s ease-in-out infinite alternate}.fluid{animation:fluid 12s ease-in-out infinite alternate}.stars{transform-origin:160px 120px;animation:spin 70s linear infinite}.stars circle{fill:#68766d}.temporal{animation:time 18s ease-in-out infinite alternate}.drift{stroke-dasharray:2 9;animation:dash 10s linear infinite}
+.eyebrow{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(46px,8vw,92px);letter-spacing:-.075em;line-height:.94;font-weight:650;max-width:760px;margin:25px 0 18px}.subtitle{font:italic clamp(17px,2vw,22px)/1.5 Georgia,serif;color:#626a64;max-width:520px}
+.content{width:min(850px,calc(100% - 44px));margin:65px auto 100px}.content-head{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:28px}.content-head span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.95 ui-monospace,SFMono-Regular,Consolas,monospace;color:#343a36;margin:0}footer{border-top:1px solid var(--line);padding:25px max(6vw,22px);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{opacity:.3;transform:scale(.92)}50%{opacity:1;transform:scale(1.06)}}@keyframes wave{to{transform:translateX(18px) scaleY(.9)}}@keyframes pathmove{to{transform:translate(8px,-5px)}}@keyframes dash{to{stroke-dashoffset:-180}}@keyframes network{to{transform:translate(5px,-7px)}}@keyframes node{to{opacity:.25;transform:scale(.7)}}@keyframes fluid{to{transform:translateY(-13px) skewX(-3deg)}}@keyframes time{to{transform:translateX(14px)}}
+@media(max-width:650px){header{height:66px}.hero{padding-top:65px;min-height:350px}.visual{width:78vw;right:-25%;top:55%;opacity:.3}.content{margin-top:42px}pre{font-size:11px;line-height:1.8}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+</style></head><body><div class="top"></div><header><a class="brand" href="/">ONTOLOGICAL CIPHER</a><a class="back" href="/research/">← Research directory</a></header>
+<main><section class="hero"><svg class="visual" viewBox="0 0 320 240" aria-hidden="true"><g class="temporal"><path d="M20 30H300 M20 70H300 M20 110H300 M20 150H300 M20 190H300"/><path class="drift" d="M40 10V220 M100 10V220 M160 10V220 M220 10V220 M280 10V220"/></g></svg><div class="eyebrow">Research archive / Hypothesis</div><h1>Time as Friction</h1><div class="subtitle">Time as a Friction</div></section>
+<article class="content"><div class="content-head"><span>Original research text</span><span>Source preserved</span></div><pre>ＦＵＮＤＡＮＩＣＳ:
+TIME AS A FRICTION
+
+FUNDANICS HYPOTHESIS
+
+I propose the idea that time may be understood as a form of universal friction.
+
+I do not mean ordinary mechanical friction such as two surfaces rubbing against each other. I mean a deeper form of resistance associated with the continuous transformation of physical systems.
+
+On Earth, we can see a simple example.
+
+When two objects repeatedly rub against each other, friction produces heat, removes material and changes the original structure of the objects.
+
+A sharp piece of metal becomes blunt.
+
+A smooth surface becomes rough.
+
+A machine slowly wears down.
+
+The object still exists, but it is no longer exactly the object it was before.
+
+In simple form:
+
+Motion
+→ Friction
+→ Energy Dissipation
+→ Wear
+→ Change of State
+→ Loss of Original Form
+
+My question is:
+
+What if the universe has an analogous process?
+
+Everything in the universe is continuously changing.
+
+Stars are born and die.
+
+Planets change.
+
+Matter interacts.
+
+Energy spreads.
+
+Galaxies collide and evolve.
+
+Black holes grow and, under Hawking radiation, can eventually lose mass.
+
+The universe itself evolves from one physical state to another.
+
+So perhaps what we call the passage of time is not something completely separate from this change.
+
+Perhaps time is the accumulated effect of the resistance and irreversible transformation that prevents physical systems from remaining in their previous states.
+
+This leads to the central hypothesis:
+
+TIME MAY BE THE FRICTION OF PHYSICAL EXISTENCE.
+
+THE IDENTITY PROBLEM
+
+Every physical object has a state.
+
+Let the initial state of a system be:
+
+S₀
+
+After physical evolution:
+
+S₀ → S₁ → S₂ → S₃ → ...
+
+The system may remain identifiable as the same object, but its exact physical configuration is continuously changing.
+
+Therefore:
+
+S₀ ≠ S₁ ≠ S₂ ≠ S₃
+
+in the sense of exact physical configuration.
+
+The difference between the original state and the current state can be thought of as accumulated physical wear.
+
+I call this concept:
+
+TEMPORAL WEAR.
+
+TEMPORAL WEAR
+
+Temporal wear is the hypothetical accumulated irreversible change experienced by a physical system as it evolves.
+
+Conceptually:
+
+Temporal Wear
+
+Accumulated Irreversible Physical Change
+
+A possible mathematical representation is:
+
+Wₜ = ∫ Rₜ dL
+
+where:
+
+Wₜ = temporal wear
+
+Rₜ = generalized temporal resistance
+
+dL = physical state transformation
+
+The larger the accumulated irreversible transformation, the greater the departure from the original physical state.
+
+WHY CALL IT FRICTION?
+
+Mechanical friction resists perfect preservation of motion.
+
+The proposed temporal friction resists perfect preservation of physical state.
+
+Mechanical friction:
+
+Motion
+→ Resistance
+→ Dissipation
+→ Wear
+
+Temporal friction:
+
+State Change
+→ Resistance
+→ Dissipation
+→ Irreversibility
+→ Temporal Wear
+
+THE SECOND LAW CONNECTION
+
+The Second Law of Thermodynamics gives:
+
+ΔSₜₒₜₐₗ ≥ 0
+
+for an isolated macroscopic system.
+
+Entropy production for an irreversible process is:
+
+Ṡₚᵣₒd &gt; 0
+
+This means irreversible physical processes have a preferred statistical direction.
+
+This is already strongly connected with the thermodynamic arrow of time. Experiments and theoretical work have linked entropy production with the distinction between forward and time-reversed processes.
+
+My hypothesis takes one additional step:
+
+Perhaps entropy production is not merely something that happens WITHIN time.
+
+Perhaps accumulated irreversible change is part of what PRODUCES our physical concept of temporal progression.
+
+TIME AS ACCUMULATED CHANGE
+
+The proposed relationship is:
+
+dτ = α Rₜ dL
+
+where:
+
+dτ = infinitesimal temporal progression
+
+α = proportionality or conversion constant
+
+Rₜ = generalized temporal resistance
+
+dL = physical state transformation
+
+Temporal resistance is proposed as:
+
+Rₜ = dWᵢᵣᵣ / dL
+
+where:
+
+dWᵢᵣᵣ = irreversible physical work
+
+Therefore:
+
+dτ = α dWᵢᵣᵣ
+
+and after integration:
+
+τ = τ₀ + α Wᵢᵣᵣ
+
+This gives the central mathematical idea:
+
+TEMPORAL PROGRESSION
+∝
+ACCUMULATED IRREVERSIBLE CHANGE
+
+THE COSMIC EXTENSION
+
+Now consider the Solar System.
+
+The Solar System is not an isolated permanent structure frozen in one state.
+
+The planets orbit the Sun.
+
+The Sun moves through the Milky Way.
+
+The Milky Way interacts gravitationally with other galaxies.
+
+Stars are born, evolve and die.
+
+Planets undergo geological and atmospheric evolution.
+
+The Solar System itself will eventually become radically different from its present configuration.
+
+But I do not propose that the Solar System experiences ordinary friction merely because it is moving through space.
+
+That would be incorrect.
+
+The proposed “cosmic friction” is instead the total accumulation of irreversible physical transformations occurring within and around the system.
+
+Therefore:
+
+Solar System
+→ Continuous Physical Evolution
+→ Irreversible Transformation
+→ Accumulated Temporal Wear
+→ Loss of Original Configuration
+
+WHO IS DESTROYING THE SYSTEM?
+
+There may not be one force responsible.
+
+The destruction of a physical identity can result from many processes:
+
+Nuclear reactions
+
+Gravitational interactions
+
+Radiative energy loss
+
+Collisions
+
+Orbital evolution
+
+Matter transformation
+
+Entropy production
+
+Quantum processes
+
+Stellar evolution
+
+Black-hole evolution
+
+Cosmological expansion
+
+These are different physical mechanisms.
+
+The hypothesis is that they may share a deeper property:
+
+THEY TRANSFORM PHYSICAL STATES IRREVERSIBLY.
+
+FROM OBJECT WEAR TO COSMIC WEAR
+
+On a small scale:
+
+Object
+→ Friction
+→ Wear
+→ Change
+
+On a thermodynamic scale:
+
+System
+→ Dissipation
+→ Entropy Production
+→ Irreversibility
+
+On a cosmic scale:
+
+Stars
+→ Stellar Evolution
+→ Energy Redistribution
+→ Structural Transformation
+
+Galaxies
+→ Gravitational Evolution
+→ Mergers and Star Formation
+→ Structural Transformation
+
+Universe
+→ Expansion and Entropy Increase
+→ Increasingly Different Macroscopic State
+
+THE DEEPER QUESTION
+
+This leads to the main question of the hypothesis:
+
+Does time cause physical change, or does physical change generate what we call time?
+
+Standard physics normally describes physical evolution using a temporal parameter.
+
+My hypothesis reverses the conceptual direction:
+
+Instead of:
+
+Time
+→ Change
+
+consider:
+
+Change
+→ Irreversible Transformation
+→ Temporal Ordering
+→ Time
+
+THE ARROW OF TIME
+
+If physical processes continuously accumulate irreversible changes, then the system develops a distinction between its previous state and its later state.
+
+Therefore:
+
+Previous State
+→ Irreversible Transformation
+→ New State
+
+The reverse process is generally not naturally obtained.
+
+This gives:
+
+Irreversibility
+→ Direction
+→ Temporal Arrow
+
+Recent research similarly investigates entropy production, irreversible correlations and information as physical foundations of the arrow of time.
+
+HEAT DEATH INTERPRETATION
+
+The hypothesis also gives an interesting interpretation of the long-term evolution of the universe.
+
+As entropy increases, less energy remains available to produce useful work and maintain large-scale energy gradients.
+
+In the conventional heat-death picture, the universe approaches thermodynamic equilibrium.
+
+Under the Time-as-Friction interpretation:
+
+Initial Universe
+→ Enormous Physical Change
+→ Continuous Irreversible Transformation
+→ Increasing Temporal Wear
+→ Increasing Entropy
+→ Decreasing Free Energy Gradients
+→ Increasingly Equilibrated Universe
+
+In this interpretation, the “wear” of the universe is not destruction of energy.
+
+Energy is conserved.
+
+Rather, the useful differences and organized configurations that allow further physical processes gradually become less available.
+
+THE IDENTITY OF THE UNIVERSE
+
+The most extreme version of the hypothesis asks:
+
+If a system undergoes enough irreversible transformation, at what point does it cease to be physically equivalent to its original state?
+
+For an object:
+
+Original Object
+→ Wear
+→ Different Object
+
+For a star:
+
+Protostar
+→ Main Sequence Star
+→ Giant
+→ Remnant
+
+For a universe:
+
+Early High-Energy State
+→ Structure Formation
+→ Stars
+→ Galaxies
+→ Stellar Remnants
+→ Increasing Entropy
+→ Possible Thermodynamic Equilibrium
+
+Therefore:
+
+TIME MAY BE MEASURED BY HOW MUCH THE UNIVERSE HAS LOST ITS PREVIOUS PHYSICAL STATE.
+
+CENTRAL FUNDANICS EQUATION
+
+The proposed fundamental relationship is:
+
+dτ = α Rₜ dL
+
+with:
+
+Rₜ = dWᵢᵣᵣ / dL
+
+therefore:
+
+dτ = α dWᵢᵣᵣ
+
+and:
+
+τ = τ₀ + α Wᵢᵣᵣ
+
+FINAL FUNDANICS PRINCIPLE
+
+Change creates difference.
+
+Irreversible difference creates direction.
+
+Accumulated irreversible difference creates temporal ordering.
+
+Therefore:
+
+CHANGE
+→ DIFFERENCE
+→ IRREVERSIBILITY
+→ TEMPORAL ORDER
+→ TIME
+
+FINAL HYPOTHESIS
+
+TIME AS FRICTION proposes that time may not simply be a background through which the universe changes.
+
+Instead, temporal progression may emerge from the continuous accumulation of irreversible physical transformation.
+
+Just as mechanical friction progressively wears down the identity of an object, universal physical processes may progressively transform the identity of every physical system.
+
+Therefore:
+
+TIME MAY BE THE UNIVERSAL WEAR OF PHYSICAL EXISTENCE.</pre></article></main>
+<footer><span>© Ontological Cipher</span><a href="/research/">Return to research directory ↑</a></footer></body></html>

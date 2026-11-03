@@ -1,57 +1,259 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A developing research concept. The original definition and formal model must be supplied before scientific claims can be evaluated.">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f2f2ef"><meta name="description" content="Atomic modulation — Ontological Cipher research archive.">
 <title>FAME — Ontological Cipher</title>
-<link rel="canonical" href="https://ontologicalcipher.github.io/research/fame/">
 <style>
-:root{color-scheme:light;--bg:#f3f3f0;--ink:#171918;--muted:#686f6b;--line:#c9ceca;--panel:#e8eae6}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 Inter,system-ui,sans-serif}
-.wrap{width:min(900px,calc(100% - 40px));margin:auto}
-header{border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-size:11px;font-weight:800;letter-spacing:.17em;text-decoration:none;color:var(--ink)}
-a{color:inherit;text-underline-offset:4px}.back{font-size:12px;color:var(--muted);text-decoration:none}
-main{padding:70px 0 100px}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:800}
-h1{font-size:clamp(40px,8vw,72px);line-height:1.05;letter-spacing:-.06em;margin:20px 0}
-h2{font-size:22px;letter-spacing:-.03em;margin:36px 0 10px}
-.lead{max-width:700px;color:var(--muted)}.status{display:inline-block;margin:15px 0 25px;padding:6px 10px;border:1px solid var(--line);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
-article{border-top:1px solid var(--line);padding:20px 0}
-.notice{padding:16px;background:var(--panel);border-left:2px solid #777f79;color:#4d5650;font-size:13px}
-.list{border-top:1px solid var(--line)}.item{display:block;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none}
-.item strong{font-weight:650}.item small{display:block;color:var(--muted);font-size:12px;margin-top:5px}
-footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:11px}
-</style>
-</head>
-<body>
-<header><div class="wrap nav"><a class="brand" href="/">ONTOLOGICAL CIPHER</a><a class="back" href="/research/">Research directory →</a></div></header>
-<main class="wrap">
-<div class="eyebrow">Physics / Conceptual hypothesis</div>
-<h1>FAME</h1>
-<p class="lead">A developing research concept. The original definition and formal model must be supplied before scientific claims can be evaluated.</p>
-<span class="status">Research record · In development</span>
-<article>
-<h2>Original concept</h2>
-<p class="notice">AUTHOR INPUT REQUIRED — Insert the exact original definition and expansion of FAME. Add its assumptions, variables, equations, derivations, predictions and limitations.</p>
-</article>
-<article>
-<h2>Established knowledge</h2>
-<p>Document accepted theories and reliable evidence separately from the original proposal. Cite primary scientific sources.</p>
-</article>
-<article>
-<h2>Mathematical consequences</h2>
-<p>Include equations, variable definitions, units, assumptions and complete derivations. Check dimensional and mathematical consistency.</p>
-</article>
-<article>
-<h2>Hypothesis and speculation</h2>
-<p>Clearly distinguish the original hypothesis from established facts and mathematical consequences. Do not present speculation as a verified result.</p>
-</article>
-<article>
-<h2>Experimental verification</h2>
-<p>Specify measurable predictions, controls, reproducible methods and observations that could falsify the proposal.</p>
-</article>
-</main>
-<footer><div class="wrap">ONTOLOGICAL CIPHER · Independent research</div></footer>
-</body>
-</html>
+:root{--bg:#f2f2ef;--ink:#191c1a;--muted:#747b76;--line:#cbd0cb;--accent:#65716a;--panel:#e8eae6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}.top{height:3px;background:var(--ink)}header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(6vw,22px);position:relative;z-index:2;background:rgba(242,242,239,.88);backdrop-filter:blur(14px)}
+.brand{font-size:11px;font-weight:800;letter-spacing:.19em}.back{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.hero{position:relative;min-height:390px;padding:90px max(8vw,24px) 65px;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.visual{position:absolute;z-index:-1;width:min(52vw,520px);height:auto;right:4%;top:50%;transform:translateY(-50%);opacity:.55;overflow:visible}
+.visual g{fill:none;stroke:#87918a;stroke-width:1;vector-effect:non-scaling-stroke}.visual circle{fill:var(--bg)}.visual .core{fill:#68766d;stroke:none}
+.orbit{transform-origin:160px 120px;animation:spin 48s linear infinite}.waves{animation:wave 12s ease-in-out infinite alternate}.res circle{transform-origin:160px 120px;animation:pulse 6s ease-in-out infinite}.res circle:nth-child(2n){animation-delay:-3s}
+.path{animation:pathmove 8s ease-in-out infinite alternate}.path circle{fill:#68766d}.radial{transform-origin:160px 120px;animation:spin 65s linear infinite}.gridlines{opacity:.8}.phase{stroke:#596a60;stroke-width:2;stroke-dasharray:8 8;animation:dash 18s linear infinite}
+.net{animation:network 16s ease-in-out infinite alternate}.net circle{fill:#68766d;animation:node 4s ease-in-out infinite alternate}.fluid{animation:fluid 12s ease-in-out infinite alternate}.stars{transform-origin:160px 120px;animation:spin 70s linear infinite}.stars circle{fill:#68766d}.temporal{animation:time 18s ease-in-out infinite alternate}.drift{stroke-dasharray:2 9;animation:dash 10s linear infinite}
+.eyebrow{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(46px,8vw,92px);letter-spacing:-.075em;line-height:.94;font-weight:650;max-width:760px;margin:25px 0 18px}.subtitle{font:italic clamp(17px,2vw,22px)/1.5 Georgia,serif;color:#626a64;max-width:520px}
+.content{width:min(850px,calc(100% - 44px));margin:65px auto 100px}.content-head{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:28px}.content-head span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.95 ui-monospace,SFMono-Regular,Consolas,monospace;color:#343a36;margin:0}footer{border-top:1px solid var(--line);padding:25px max(6vw,22px);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{opacity:.3;transform:scale(.92)}50%{opacity:1;transform:scale(1.06)}}@keyframes wave{to{transform:translateX(18px) scaleY(.9)}}@keyframes pathmove{to{transform:translate(8px,-5px)}}@keyframes dash{to{stroke-dashoffset:-180}}@keyframes network{to{transform:translate(5px,-7px)}}@keyframes node{to{opacity:.25;transform:scale(.7)}}@keyframes fluid{to{transform:translateY(-13px) skewX(-3deg)}}@keyframes time{to{transform:translateX(14px)}}
+@media(max-width:650px){header{height:66px}.hero{padding-top:65px;min-height:350px}.visual{width:78vw;right:-25%;top:55%;opacity:.3}.content{margin-top:42px}pre{font-size:11px;line-height:1.8}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+</style></head><body><div class="top"></div><header><a class="brand" href="/">ONTOLOGICAL CIPHER</a><a class="back" href="/research/">← Research directory</a></header>
+<main><section class="hero"><svg class="visual" viewBox="0 0 320 240" aria-hidden="true"><g class="waves"><path d="M 0 30 Q 80 5 160 30 T 320 30"/><path d="M 0 55 Q 80 90 160 55 T 320 55"/><path d="M 0 80 Q 80 55 160 80 T 320 80"/><path d="M 0 105 Q 80 140 160 105 T 320 105"/><path d="M 0 130 Q 80 105 160 130 T 320 130"/><path d="M 0 155 Q 80 190 160 155 T 320 155"/><path d="M 0 180 Q 80 155 160 180 T 320 180"/></g></svg><div class="eyebrow">Research archive / Hypothesis</div><h1>FAME</h1><div class="subtitle">Atomic modulation</div></section>
+<article class="content"><div class="content-head"><span>Original research text</span><span>Source preserved</span></div><pre>ＦＵＮＤＡＮＩＣＳ:
+FAME
+
+FUNDANICS ATOMIC MODULATION EFFECT
+
+A proposed concept for controlled modulation of atomic quantum dynamics
+
+━━━━━━━━━━━━━━━━━━
+
+01 — THE CORE IDEA
+
+FAME asks:
+
+Can an external, precisely controlled stimulus continuously modify the effective behavior of an atomic quantum system rather than simply switching it between “on” and “off” states?
+
+The proposed concept is:
+
+External control → Quantum response → Interaction modulation → Controlled adjustment → Reversible response
+
+Instead of trying to completely eliminate an interaction, FAME focuses on the possibility of controlling its effective strength or influence.
+
+━━━━━━━━━━━━━━━━━━
+
+02 — THE MATHEMATICAL FOUNDATION
+
+A driven quantum system can be described by:
+
+H(t) = H₀ + V(t)
+
+where:
+
+H₀ = Hamiltonian of the undriven system
+
+V(t) = externally applied interaction
+
+For a periodic stimulus:
+
+V(t) = A cos(ωt)
+
+where:
+
+A = drive amplitude
+
+ω = driving angular frequency
+
+The resulting dynamics depend on the system, drive frequency, amplitude, phase, and interaction being controlled.
+
+A simplified effective description can therefore be written conceptually as:
+
+Hₑff = H₀ + ΔH(A, ω, φ, …)
+
+where ΔH represents the change produced by the external control.
+
+━━━━━━━━━━━━━━━━━━
+
+03 — THE KEY IDEA
+
+FAME does not require the interaction to become zero.
+
+Instead:
+
+J → Jₑff
+
+where:
+
+J = original effective coupling
+
+Jₑff = coupling under controlled driving
+
+The objective is to determine whether:
+
+Jₑff = f(A, ω, φ, system)
+
+can be deliberately controlled over a useful range.
+
+This is a more conservative and physically testable proposition than claiming that an atomic force can simply be switched off.
+
+━━━━━━━━━━━━━━━━━━
+
+04 — THIS PART IS ALREADY ESTABLISHED
+
+Quantum-control experiments already demonstrate that external control sequences can alter quantum dynamics and suppress unwanted system–environment interactions.
+
+This is known as dynamical decoupling, and related techniques are used across quantum platforms including trapped ions, superconducting systems, neutral atoms, and other quantum devices.
+
+Hamiltonian engineering is also an established approach to deliberately modify effective quantum dynamics.
+
+Therefore:
+
+External control → modified effective quantum behavior
+
+is established physics.
+
+━━━━━━━━━━━━━━━━━━
+
+05 — WHERE FAME PROPOSES SOMETHING FURTHER
+
+FAME proposes using the idea of continuous interaction modulation as a conceptual framework for investigating atomic systems.
+
+The question becomes:
+
+Can the effective interaction of a selected atomic process be continuously tuned through carefully designed external control, rather than merely being excited or suppressed?
+
+The proposed control loop is:
+
+Measure → Drive → Modify → Measure → Adjust
+
+This introduces the possibility of feedback-controlled quantum modulation.
+
+━━━━━━━━━━━━━━━━━━
+
+06 — A CONCEPTUAL CONTROL MODEL
+
+Imagine an interaction represented by:
+
+J₀
+
+Under external control:
+
+Jₑff = J₀ + ΔJ
+
+If the control parameters are changed:
+
+ΔJ = ΔJ(A, ω, φ, t)
+
+Then:
+
+Jₑff(t) = J₀ + ΔJ(t)
+
+The goal would be to experimentally determine whether Jₑff can be predictably controlled within a chosen atomic system.
+
+This is a model to investigate—not a universal equation for all atoms.
+
+━━━━━━━━━━━━━━━━━━
+
+07 — WHAT FAME DOES NOT CLAIM
+
+FAME does not claim:
+
+✗ that every atomic interaction can be continuously controlled
+
+✗ that fundamental forces can be turned off
+
+✗ that nuclear binding can be arbitrarily weakened
+
+✗ that frequency alone produces unlimited energy
+
+✗ that FAME has already demonstrated a new physical effect
+
+The mathematical description depends on the actual physical system and its Hamiltonian.
+
+━━━━━━━━━━━━━━━━━━
+
+08 — POSSIBLE EXPERIMENTAL TEST
+
+A meaningful FAME experiment would require:
+
+1. A defined atomic or quantum system
+
+2. A specific interaction
+
+3. A measurable observable related to that interaction
+
+4. Controlled drive amplitude
+
+5. Controlled frequency
+
+6. Controlled phase or waveform
+
+7. A theoretical prediction for the expected response
+
+8. Independent measurement of the resulting change
+
+The experiment would also need to distinguish genuine interaction modulation from ordinary excitation, resonance, heating, decoherence, and measurement effects.
+
+━━━━━━━━━━━━━━━━━━
+
+09 — SCIENTIFIC VERIFICATION
+
+QUANTUM-STATE CONTROL
+
+ESTABLISHED
+
+EXTERNAL MODULATION OF QUANTUM DYNAMICS
+
+ESTABLISHED
+
+DYNAMICAL DECOUPLING
+
+ESTABLISHED
+
+HAMILTONIAN ENGINEERING
+
+ESTABLISHED
+
+CONTINUOUS CONTROL OF A SELECTED ATOMIC INTERACTION
+
+SYSTEM-DEPENDENT / REQUIRES SPECIFIC MODEL
+
+FAME AS A NEW GENERAL THEORY
+
+NOT ESTABLISHED
+
+EXPERIMENTAL VALIDATION OF FAME
+
+NOT PERFORMED
+
+━━━━━━━━━━━━━━━━━━
+
+CONCLUSION
+
+FAME starts from established quantum-control physics:
+
+A carefully designed external stimulus can modify the dynamics of a quantum system.
+
+The proposed extension is to treat this modification as a continuously controllable variable and investigate whether selected atomic interactions can be predictably tuned through external control.
+
+The established physics supports the general control principle.
+
+It does not yet establish FAME as a new physical theory.
+
+The concept proposes controlled modulation.
+The mathematics defines the response.
+Experiment determines whether the proposed control can actually be achieved.
+
+━━━━━━━━━━━━━━━━━━
+
+FUNDANICS
+
+Exploring the fundamentals of reality.
+
+FAME — FUNDANICS ATOMIC MODULATION EFFECT
+
+Concept #05 • Grounded in established quantum-control principles • Proposed framework • Experimental effect not yet demonstrated
+
+Scientific status: PROPOSED CONCEPT</pre></article></main>
+<footer><span>© Ontological Cipher</span><a href="/research/">Return to research directory ↑</a></footer></body></html>

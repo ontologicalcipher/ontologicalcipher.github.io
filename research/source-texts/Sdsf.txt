@@ -1,0 +1,130 @@
+FUNDANICS STELLAR DISTANCE SCALING FORMULA
+
+SDSF — Stellar Distance Scaling Formula
+
+Status: Mathematically verified • Scientifically unvalidated
+
+━━━━━━━━━━━━━━━━━━
+
+1. PROPOSED EQUATION
+
+R = D₍star₎ × [D₍Sun–Earth₎ ÷ D₍Moon–Earth₎]
+
+Where:
+
+R = resulting scaled distance
+D₍star₎ = distance from Earth to the selected star
+D₍Sun–Earth₎ = mean Earth–Sun distance
+D₍Moon–Earth₎ = mean Earth–Moon distance
+
+━━━━━━━━━━━━━━━━━━
+
+2. ORIGIN OF THE 389.17 FACTOR
+
+The International Astronomical Union defines the astronomical unit (au) as exactly:
+
+1 au = 149,597,870.7 km
+
+The mean Earth–Moon distance is approximately:
+
+384,400 km
+
+Therefore:
+
+149,597,870.7 ÷ 384,400 ≈ 389.17
+
+So the proposed relation can be written as:
+
+R ≈ 389.17 × D₍star₎
+
+The value 389.17 is therefore a calculated dimensionless ratio, not a fundamental constant of nature.
+
+━━━━━━━━━━━━━━━━━━
+
+3. EXAMPLE — PROXIMA CENTAURI
+
+Approximate distance:
+
+D₍star₎ ≈ 4.246 light-years
+
+Applying SDSF:
+
+R = 4.246 × 389.17
+
+R ≈ 1,652.7 light-years
+
+The calculation is mathematically consistent because 389.17 is dimensionless.
+
+━━━━━━━━━━━━━━━━━━
+
+4. WHAT HAS BEEN VERIFIED?
+
+✓ Mathematical verification
+
+The ratio:
+
+149,597,870.7 ÷ 384,400 ≈ 389.17
+
+is correct to the stated precision.
+
+✓ Dimensional consistency
+
+Because the Sun–Earth distance divided by the Moon–Earth distance is dimensionless, multiplying it by a stellar distance preserves the distance unit.
+
+✓ Astronomical reference values
+
+The Earth–Moon average distance used here is consistent with NASA's published value of approximately 384,400 km.
+
+━━━━━━━━━━━━━━━━━━
+
+5. WHAT HAS NOT BEEN VERIFIED?
+
+The calculation does not establish a new astronomical law, constant, or physical mechanism.
+
+SDSF currently performs a linear rescaling of a known stellar distance by approximately 389.17.
+
+No claim is made here that the resulting number represents a previously known physical quantity.
+
+For SDSF to have deeper scientific significance, it would need to produce a testable prediction or independently reproducible relationship that cannot be explained simply by the mathematical scaling itself.
+
+━━━━━━━━━━━━━━━━━━
+
+6. AI VERIFICATION SUMMARY
+
+Calculation: VERIFIED
+Distance ratio: VERIFIED
+Unit consistency: VERIFIED
+Underlying reference distances: VERIFIED against NASA/IAU sources
+New physical law: NOT ESTABLISHED
+New fundamental constant: NOT CLAIMED
+Scientific significance: REQUIRES FURTHER TESTING
+
+━━━━━━━━━━━━━━━━━━
+
+7. CONCLUSION
+
+The FUNDANICS Stellar Distance Scaling Formula (SDSF) is mathematically valid as a distance-scaling relation:
+
+R = D₍star₎ × [D₍Sun–Earth₎ ÷ D₍Moon–Earth₎]
+
+or approximately:
+
+R ≈ 389.17 × D₍star₎
+
+The numerical foundation of the equation checks out.
+
+However, mathematical validity is not the same as physical discovery.
+
+At present, SDSF should be presented as a proposed mathematical relation for investigation, not as an established scientific law.
+
+━━━━━━━━━━━━━━━━━━
+
+FUNDANICS
+
+Exploring the fundamentals of reality.
+
+SDSF — Stellar Distance Scaling Formula
+
+Mathematically verified. Scientifically open for investigation.
+
+Reference basis: International Astronomical Union (IAU) astronomical-unit definition; NASA lunar-distance data.

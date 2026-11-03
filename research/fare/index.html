@@ -1,166 +1,315 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A proposed framework for using atomic resonance as a controllable feedback variable">
-<link rel="canonical" href="https://ontologicalcipher.github.io/research/fare/">
+<meta name="theme-color" content="#f2f2ef"><meta name="description" content="Atomic resonance feedback — Ontological Cipher research archive.">
 <title>FARE — Ontological Cipher</title>
 <style>
-:root{color-scheme:light;--bg:#f3f3f0;--ink:#171918;--muted:#646c67;--line:#c9ceca;--accent:#59645e}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 Inter,system-ui,sans-serif}
-header{border-bottom:1px solid var(--line);padding:22px max(24px,calc((100% - 900px)/2));display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}a:hover{border-color:var(--ink)}
-main{max-width:820px;margin:0 auto;padding:70px 24px 100px}.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700}
-h1{font-size:clamp(38px,7vw,64px);line-height:1.08;letter-spacing:-.055em;font-weight:650;margin:18px 0 40px}
-article{font-size:15px}h2{font-size:19px;line-height:1.35;margin:38px 0 12px;letter-spacing:-.02em}p{margin:0 0 15px}.equation{font-family:ui-monospace,monospace;background:#e8eae6;padding:12px 15px;overflow-wrap:anywhere}.bullet{padding-left:14px}hr{border:0;border-top:1px solid var(--line);margin:28px 0}
-footer{border-top:1px solid var(--line);padding:25px max(24px,calc((100% - 900px)/2));font-size:11px;color:var(--muted)}
-</style></head><body><header><a href="/">ONTOLOGICAL CIPHER</a><a href="/research/">RESEARCH DIRECTORY</a></header>
-<main><div class="eyebrow">Research archive / fare</div><h1>FARE</h1><article><h2>ＦＵＮＤＡＮＩＣＳ:</h2>
-<p>FARE</p>
-<p>FUNDANICS ATOMIC RESONANCE EFFECT</p>
-<p>A proposed framework for using atomic resonance as a controllable feedback variable</p>
-<hr>
-<h2>01 — THE CORE IDEA</h2>
-<p>FARE asks:</p>
-<p>Can the measurable response of an atomic system to an external frequency be used not only to observe the atom, but to continuously control its quantum state or interaction?</p>
-<p>The proposed cycle is:</p>
-<p class="equation">Frequency → Atomic response → Measurement → Feedback → Frequency adjustment → New response</p>
-<p>The key idea is to turn resonance into a control variable.</p>
-<hr>
-<h2>02 — THE MATHEMATICAL FOUNDATION</h2>
-<p>For a simplified two-level atomic system, the Hamiltonian can be represented as:</p>
-<p>H = (ℏΔ/2)σᶻ + (ℏΩ/2)σˣ</p>
-<p>where:</p>
-<p>Δ = detuning between the applied frequency and the atomic transition</p>
-<p>Ω = drive strength</p>
-<p>ℏ = reduced Planck constant</p>
-<p>The generalized Rabi frequency is:</p>
-<p>Ωₑff = √(Ω² + Δ²)</p>
-<p>For an ideal two-level system, the transition probability can be written as:</p>
-<p>P(t) = [Ω²/(Ω² + Δ²)] sin²(Ωₑff t / 2)</p>
-<p>Therefore, changing the driving frequency changes Δ, which changes the predicted response of the atom.</p>
-<hr>
-<h2>03 — THE RESONANCE PRINCIPLE</h2>
-<p>When the applied frequency approaches the relevant transition frequency:</p>
-<h2>Δ → 0</h2>
-<p>the drive can strongly couple to the transition.</p>
-<p>When the system is significantly detuned:</p>
-<h2>|Δ| ≫ Ω</h2>
-<p>the transition probability is strongly reduced in this simplified model.</p>
-<p>Therefore:</p>
-<p class="equation">Frequency → Detuning → Quantum response</p>
-<p>is a mathematically defined relationship.</p>
-<p>This is established quantum physics, not a new claim.</p>
-<hr>
-<h2>04 — WHERE FARE GOES FURTHER</h2>
-<p>FARE proposes adding a feedback loop.</p>
-<p>Instead of applying a fixed frequency:</p>
-<p class="equation">Fixed frequency → Observe result</p>
-<p>FARE proposes:</p>
-<p>Apply frequency</p>
-<p>↓</p>
-<p>Measure atomic response</p>
-<p>↓</p>
-<p>Compare response with target</p>
-<p>↓</p>
-<p>Adjust frequency / drive parameters</p>
-<p>↓</p>
-<p>Measure again</p>
-<p>This creates a closed-loop control concept.</p>
-<p>Quantum measurement and feedback are established methods for manipulating and stabilizing quantum systems.</p>
-<hr>
-<h2>05 — THE CONTROL MODEL</h2>
-<p>A simplified feedback relationship can be written as:</p>
-<p>e(t) = R(t) − y(t)</p>
-<p>where:</p>
-<p>R(t) = desired response</p>
-<p>y(t) = measured atomic response</p>
-<p>e(t) = control error</p>
-<p>A controller can then adjust the driving parameters:</p>
-<p>u(t) = F[e(t)]</p>
-<p>where:</p>
-<p>u(t) = applied control</p>
-<p>F = chosen control law</p>
-<p>The exact control law would depend on the physical system.</p>
-<p>This is a framework for investigation—not a universal equation for atoms.</p>
-<hr>
-<h2>06 — WHY THIS MATTERS TO FADH</h2>
-<p>FARE could potentially serve as a control layer for the earlier FUNDANICS hypotheses.</p>
-<p>Conceptually:</p>
-<p>FARE</p>
-<p>↓</p>
-<p>Detect atomic response</p>
-<p>↓</p>
-<p>Adjust external stimulus</p>
-<p>↓</p>
-<p>FRAD / FRDT</p>
-<p>↓</p>
-<p>Investigate controlled interaction modification</p>
-<p>This does not prove the earlier hypotheses.</p>
-<p>It provides a possible way to measure and control the system while testing them.</p>
-<hr>
-<h2>07 — AN IMPORTANT QUANTUM LIMIT</h2>
-<p>Control through repeated intervention does not automatically mean that a quantum system will become “frozen.”</p>
-<p>The quantum Zeno effect demonstrates that sufficiently frequent measurements can inhibit certain quantum transitions. This has been experimentally observed in trapped ions.</p>
-<p>But quantum systems can also exhibit the anti-Zeno effect, where repeated interventions accelerate rather than suppress a transition.</p>
-<p>Therefore:</p>
-<p>More control ≠ automatically less motion.</p>
-<p>The timing, measurement process, coupling, and system dynamics determine the result.</p>
-<hr>
-<h2>08 — WHAT IS ESTABLISHED?</h2>
-<p>VERIFIED</p>
-<p class="bullet">✓ Atomic systems have frequency-dependent quantum responses.</p>
-<p class="bullet">✓ Resonant driving can control atomic transitions.</p>
-<p class="bullet">✓ Detuning mathematically affects transition probabilities.</p>
-<p class="bullet">✓ Quantum measurement can influence quantum evolution.</p>
-<p class="bullet">✓ Quantum feedback can be used to control quantum systems.</p>
-<p class="bullet">✓ The Quantum Zeno effect demonstrates experimentally controlled inhibition of certain transitions.</p>
-<hr>
-<h2>09 — WHAT FARE DOES NOT CLAIM</h2>
-<p>FARE does not claim:</p>
-<p class="bullet">✗ that resonance can switch fundamental forces off</p>
-<p class="bullet">✗ that frequency alone can separate atomic nuclei</p>
-<p class="bullet">✗ that repeated measurements always suppress atomic evolution</p>
-<p class="bullet">✗ that feedback automatically creates a new physical mechanism</p>
-<p class="bullet">✗ that FARE has already been experimentally demonstrated as a new effect</p>
-<p>The established physics provides the tools.</p>
-<p>FARE proposes a particular way of combining them into a control framework.</p>
-<hr>
-<h2>10 — THE EXPERIMENTAL TEST</h2>
-<p>A future FARE experiment would need:</p>
-<h2>1. A defined atomic system</h2>
-<h2>2. A known transition frequency</h2>
-<h2>3. A controllable external field</h2>
-<h2>4. A measurable atomic observable</h2>
-<h2>5. A feedback controller</h2>
-<h2>6. A defined target response</h2>
-<h2>7. A quantitative prediction</h2>
-<h2>8. Independent comparison with conventional open-loop control</h2>
-<p>The experiment would determine whether feedback provides a meaningful advantage over existing atomic-control methods.</p>
-<hr>
-<h2>11 — SCIENTIFIC VERIFICATION</h2>
-<p>Atomic resonance: ESTABLISHED</p>
-<p>Frequency-dependent atomic transitions: ESTABLISHED</p>
-<p>Quantum measurement control: ESTABLISHED</p>
-<p>Quantum feedback control: ESTABLISHED</p>
-<p>Quantum Zeno effect: EXPERIMENTALLY ESTABLISHED</p>
-<p>FARE feedback framework: PROPOSED</p>
-<p>FARE as a new physical effect: NOT ESTABLISHED</p>
-<p>Atomic decoupling through FARE: NOT ESTABLISHED</p>
-<p>Experimental validation of FARE: NOT PERFORMED</p>
-<hr>
-<h2>CONCLUSION</h2>
-<p>FARE begins with an established fact:</p>
-<p>Atomic systems respond predictably to external frequencies and fields.</p>
-<p>The proposed extension is to use that response as a real-time feedback signal, continuously adjusting the external stimulus to steer the system toward a desired quantum regime.</p>
-<p>The mathematics supports the underlying resonance and control principles.</p>
-<p>The feedback framework is physically plausible as a control concept.</p>
-<p>But whether FARE can produce a new form of atomic interaction control remains an open question.</p>
-<p>The measurement tells us what the atom is doing.</p>
-<p>The feedback decides what to change.</p>
-<p>The experiment determines whether the control actually works.</p>
-<hr>
-<p>FUNDANICS</p>
-<p>Exploring the fundamentals of reality.</p>
-<p>FARE — FUNDANICS ATOMIC RESONANCE EFFECT</p>
-<p>Concept #06 • Mathematically grounded • Built on established resonance and quantum-control physics • Proposed extension remains unverified</p>
-<p>Scientific status: PROPOSED FRAMEWORK</p></article></main>
-<footer>© 2026 Ontological Cipher · Independent research. Hypotheses are distinguished from established scientific findings.</footer></body></html>
+:root{--bg:#f2f2ef;--ink:#191c1a;--muted:#747b76;--line:#cbd0cb;--accent:#65716a;--panel:#e8eae6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}.top{height:3px;background:var(--ink)}header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(6vw,22px);position:relative;z-index:2;background:rgba(242,242,239,.88);backdrop-filter:blur(14px)}
+.brand{font-size:11px;font-weight:800;letter-spacing:.19em}.back{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.hero{position:relative;min-height:390px;padding:90px max(8vw,24px) 65px;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.visual{position:absolute;z-index:-1;width:min(52vw,520px);height:auto;right:4%;top:50%;transform:translateY(-50%);opacity:.55;overflow:visible}
+.visual g{fill:none;stroke:#87918a;stroke-width:1;vector-effect:non-scaling-stroke}.visual circle{fill:var(--bg)}.visual .core{fill:#68766d;stroke:none}
+.orbit{transform-origin:160px 120px;animation:spin 48s linear infinite}.waves{animation:wave 12s ease-in-out infinite alternate}.res circle{transform-origin:160px 120px;animation:pulse 6s ease-in-out infinite}.res circle:nth-child(2n){animation-delay:-3s}
+.path{animation:pathmove 8s ease-in-out infinite alternate}.path circle{fill:#68766d}.radial{transform-origin:160px 120px;animation:spin 65s linear infinite}.gridlines{opacity:.8}.phase{stroke:#596a60;stroke-width:2;stroke-dasharray:8 8;animation:dash 18s linear infinite}
+.net{animation:network 16s ease-in-out infinite alternate}.net circle{fill:#68766d;animation:node 4s ease-in-out infinite alternate}.fluid{animation:fluid 12s ease-in-out infinite alternate}.stars{transform-origin:160px 120px;animation:spin 70s linear infinite}.stars circle{fill:#68766d}.temporal{animation:time 18s ease-in-out infinite alternate}.drift{stroke-dasharray:2 9;animation:dash 10s linear infinite}
+.eyebrow{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(46px,8vw,92px);letter-spacing:-.075em;line-height:.94;font-weight:650;max-width:760px;margin:25px 0 18px}.subtitle{font:italic clamp(17px,2vw,22px)/1.5 Georgia,serif;color:#626a64;max-width:520px}
+.content{width:min(850px,calc(100% - 44px));margin:65px auto 100px}.content-head{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:28px}.content-head span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.95 ui-monospace,SFMono-Regular,Consolas,monospace;color:#343a36;margin:0}footer{border-top:1px solid var(--line);padding:25px max(6vw,22px);display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{opacity:.3;transform:scale(.92)}50%{opacity:1;transform:scale(1.06)}}@keyframes wave{to{transform:translateX(18px) scaleY(.9)}}@keyframes pathmove{to{transform:translate(8px,-5px)}}@keyframes dash{to{stroke-dashoffset:-180}}@keyframes network{to{transform:translate(5px,-7px)}}@keyframes node{to{opacity:.25;transform:scale(.7)}}@keyframes fluid{to{transform:translateY(-13px) skewX(-3deg)}}@keyframes time{to{transform:translateX(14px)}}
+@media(max-width:650px){header{height:66px}.hero{padding-top:65px;min-height:350px}.visual{width:78vw;right:-25%;top:55%;opacity:.3}.content{margin-top:42px}pre{font-size:11px;line-height:1.8}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+</style></head><body><div class="top"></div><header><a class="brand" href="/">ONTOLOGICAL CIPHER</a><a class="back" href="/research/">← Research directory</a></header>
+<main><section class="hero"><svg class="visual" viewBox="0 0 320 240" aria-hidden="true"><g class="res"><circle cx="160" cy="120" r="22"/><circle cx="160" cy="120" r="52"/><circle cx="160" cy="120" r="82"/><circle cx="160" cy="120" r="112"/><path d="M20 120H300"/></g></svg><div class="eyebrow">Research archive / Hypothesis</div><h1>FARE</h1><div class="subtitle">Atomic resonance feedback</div></section>
+<article class="content"><div class="content-head"><span>Original research text</span><span>Source preserved</span></div><pre>ＦＵＮＤＡＮＩＣＳ:
+FARE
+
+FUNDANICS ATOMIC RESONANCE EFFECT
+
+A proposed framework for using atomic resonance as a controllable feedback variable
+
+━━━━━━━━━━━━━━━━━━
+
+01 — THE CORE IDEA
+
+FARE asks:
+
+Can the measurable response of an atomic system to an external frequency be used not only to observe the atom, but to continuously control its quantum state or interaction?
+
+The proposed cycle is:
+
+Frequency → Atomic response → Measurement → Feedback → Frequency adjustment → New response
+
+The key idea is to turn resonance into a control variable.
+
+━━━━━━━━━━━━━━━━━━
+
+02 — THE MATHEMATICAL FOUNDATION
+
+For a simplified two-level atomic system, the Hamiltonian can be represented as:
+
+H = (ℏΔ/2)σᶻ + (ℏΩ/2)σˣ
+
+where:
+
+Δ = detuning between the applied frequency and the atomic transition
+
+Ω = drive strength
+
+ℏ = reduced Planck constant
+
+The generalized Rabi frequency is:
+
+Ωₑff = √(Ω² + Δ²)
+
+For an ideal two-level system, the transition probability can be written as:
+
+P(t) = [Ω²/(Ω² + Δ²)] sin²(Ωₑff t / 2)
+
+Therefore, changing the driving frequency changes Δ, which changes the predicted response of the atom.
+
+━━━━━━━━━━━━━━━━━━
+
+03 — THE RESONANCE PRINCIPLE
+
+When the applied frequency approaches the relevant transition frequency:
+
+Δ → 0
+
+the drive can strongly couple to the transition.
+
+When the system is significantly detuned:
+
+|Δ| ≫ Ω
+
+the transition probability is strongly reduced in this simplified model.
+
+Therefore:
+
+Frequency → Detuning → Quantum response
+
+is a mathematically defined relationship.
+
+This is established quantum physics, not a new claim.
+
+━━━━━━━━━━━━━━━━━━
+
+04 — WHERE FARE GOES FURTHER
+
+FARE proposes adding a feedback loop.
+
+Instead of applying a fixed frequency:
+
+Fixed frequency → Observe result
+
+FARE proposes:
+
+Apply frequency
+
+↓
+
+Measure atomic response
+
+↓
+
+Compare response with target
+
+↓
+
+Adjust frequency / drive parameters
+
+↓
+
+Measure again
+
+This creates a closed-loop control concept.
+
+Quantum measurement and feedback are established methods for manipulating and stabilizing quantum systems.
+
+━━━━━━━━━━━━━━━━━━
+
+05 — THE CONTROL MODEL
+
+A simplified feedback relationship can be written as:
+
+e(t) = R(t) − y(t)
+
+where:
+
+R(t) = desired response
+
+y(t) = measured atomic response
+
+e(t) = control error
+
+A controller can then adjust the driving parameters:
+
+u(t) = F[e(t)]
+
+where:
+
+u(t) = applied control
+
+F = chosen control law
+
+The exact control law would depend on the physical system.
+
+This is a framework for investigation—not a universal equation for atoms.
+
+━━━━━━━━━━━━━━━━━━
+
+06 — WHY THIS MATTERS TO FADH
+
+FARE could potentially serve as a control layer for the earlier FUNDANICS hypotheses.
+
+Conceptually:
+
+FARE
+
+↓
+Detect atomic response
+
+↓
+Adjust external stimulus
+
+↓
+FRAD / FRDT
+
+↓
+Investigate controlled interaction modification
+
+This does not prove the earlier hypotheses.
+
+It provides a possible way to measure and control the system while testing them.
+
+━━━━━━━━━━━━━━━━━━
+
+07 — AN IMPORTANT QUANTUM LIMIT
+
+Control through repeated intervention does not automatically mean that a quantum system will become “frozen.”
+
+The quantum Zeno effect demonstrates that sufficiently frequent measurements can inhibit certain quantum transitions. This has been experimentally observed in trapped ions.
+
+But quantum systems can also exhibit the anti-Zeno effect, where repeated interventions accelerate rather than suppress a transition.
+
+Therefore:
+
+More control ≠ automatically less motion.
+
+The timing, measurement process, coupling, and system dynamics determine the result.
+
+━━━━━━━━━━━━━━━━━━
+
+08 — WHAT IS ESTABLISHED?
+
+VERIFIED
+
+✓ Atomic systems have frequency-dependent quantum responses.
+
+✓ Resonant driving can control atomic transitions.
+
+✓ Detuning mathematically affects transition probabilities.
+
+✓ Quantum measurement can influence quantum evolution.
+
+✓ Quantum feedback can be used to control quantum systems.
+
+✓ The Quantum Zeno effect demonstrates experimentally controlled inhibition of certain transitions.
+
+━━━━━━━━━━━━━━━━━━
+
+09 — WHAT FARE DOES NOT CLAIM
+
+FARE does not claim:
+
+✗ that resonance can switch fundamental forces off
+
+✗ that frequency alone can separate atomic nuclei
+
+✗ that repeated measurements always suppress atomic evolution
+
+✗ that feedback automatically creates a new physical mechanism
+
+✗ that FARE has already been experimentally demonstrated as a new effect
+
+The established physics provides the tools.
+
+FARE proposes a particular way of combining them into a control framework.
+
+━━━━━━━━━━━━━━━━━━
+
+10 — THE EXPERIMENTAL TEST
+
+A future FARE experiment would need:
+
+1. A defined atomic system
+
+2. A known transition frequency
+
+3. A controllable external field
+
+4. A measurable atomic observable
+
+5. A feedback controller
+
+6. A defined target response
+
+7. A quantitative prediction
+
+8. Independent comparison with conventional open-loop control
+
+The experiment would determine whether feedback provides a meaningful advantage over existing atomic-control methods.
+
+━━━━━━━━━━━━━━━━━━
+
+11 — SCIENTIFIC VERIFICATION
+
+Atomic resonance: ESTABLISHED
+
+Frequency-dependent atomic transitions: ESTABLISHED
+
+Quantum measurement control: ESTABLISHED
+
+Quantum feedback control: ESTABLISHED
+
+Quantum Zeno effect: EXPERIMENTALLY ESTABLISHED
+
+FARE feedback framework: PROPOSED
+
+FARE as a new physical effect: NOT ESTABLISHED
+
+Atomic decoupling through FARE: NOT ESTABLISHED
+
+Experimental validation of FARE: NOT PERFORMED
+
+━━━━━━━━━━━━━━━━━━
+
+CONCLUSION
+
+FARE begins with an established fact:
+
+Atomic systems respond predictably to external frequencies and fields.
+
+The proposed extension is to use that response as a real-time feedback signal, continuously adjusting the external stimulus to steer the system toward a desired quantum regime.
+
+The mathematics supports the underlying resonance and control principles.
+
+The feedback framework is physically plausible as a control concept.
+
+But whether FARE can produce a new form of atomic interaction control remains an open question.
+
+The measurement tells us what the atom is doing.
+The feedback decides what to change.
+The experiment determines whether the control actually works.
+
+━━━━━━━━━━━━━━━━━━
+
+FUNDANICS
+
+Exploring the fundamentals of reality.
+
+FARE — FUNDANICS ATOMIC RESONANCE EFFECT
+
+Concept #06 • Mathematically grounded • Built on established resonance and quantum-control physics • Proposed extension remains unverified
+
+Scientific status: PROPOSED FRAMEWORK</pre></article></main>
+<footer><span>© Ontological Cipher</span><a href="/research/">Return to research directory ↑</a></footer></body></html>
