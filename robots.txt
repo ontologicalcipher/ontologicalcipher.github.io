@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ontologicalcipher.github.io/sitemap.xml
