@@ -78,6 +78,10 @@
     .entry h3{font-size:20px;letter-spacing:-.035em;margin:0 0 6px}
     .entry p{font-size:12px;line-height:1.7;color:var(--muted);margin:0;max-width:690px}
     .status{justify-self:end;font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:8px 10px}
+    .entry h3 a{border-bottom:1px solid transparent;transition:border-color .2s}
+    .entry h3 a:hover{border-color:var(--ink)}
+    .archive-more{display:flex;justify-content:flex-end;padding-top:24px}
+
     .method{background:var(--paper-2)}
     .method-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
     .method-item{padding:19px 15px;min-height:160px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -132,7 +136,7 @@
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span></button>
     <nav class="navlinks" aria-label="Main navigation">
-      <a href="#focus">Focus</a><a href="#research">Research</a><a href="#method">Method</a><a href="#about">About</a>
+      <a href="#focus">Focus</a><a href="#research">Research</a><a href="/research/">Research directory</a><a href="#method">Method</a><a href="#about">About</a>
     </nav>
   </div>
 </header>
@@ -185,12 +189,15 @@
         <button class="filter" data-filter="systems" aria-pressed="false">Systems</button>
       </div>
       <div class="archive">
-        <article class="entry reveal" data-category="science"><div class="entry-type">Science / Mathematics</div><div><h3>Stellar Distance Scaling Formula</h3><p>An exploratory distance-scaling proposal; mathematical derivation and empirical validity must be evaluated separately.</p></div><span class="status">Hypothesis</span></article>
-        <article class="entry reveal" data-category="science"><div class="entry-type">Physics / Conceptual model</div><div><h3>FAME</h3><p>A developing research concept. Formal definitions, derivations and testable consequences belong in its dedicated research record.</p></div><span class="status">In development</span></article>
-        <article class="entry reveal" data-category="science"><div class="entry-type">Physics / Conceptual model</div><div><h3>FADH</h3><p>A working concept requiring explicit assumptions, mathematical formulation and comparison with established physical models.</p></div><span class="status">In development</span></article>
-        <article class="entry reveal" data-category="ideas"><div class="entry-type">Philosophy / Foundations</div><div><h3>Time as a Friction</h3><p>A conceptual hypothesis exploring an alternative description of time. It requires operational definitions and falsifiable predictions.</p></div><span class="status">Hypothesis</span></article>
-        <article class="entry reveal" data-category="ideas"><div class="entry-type">Ontology / Language</div><div><h3>Ontological Cipher Hypothesis</h3><p>A proposed pasigraphic instruction framework: a script-independent notation system for encoding ontological categories.</p></div><span class="status">Research project</span></article>
-        <article class="entry reveal" data-category="systems"><div class="entry-type">Software / Security</div><div><h3>Independent Systems Experiments</h3><p>Prototypes exploring software architecture, automation, information handling and defensive security concepts.</p></div><span class="status">In development</span></article>
+        <article class="entry reveal" data-category="science"><div class="entry-type">Science / Mathematics</div><div><h3><a href="/fundanics/sdsf/">Stellar Distance Scaling Formula</a></h3><p>An exploratory distance-scaling proposal; mathematical derivation and empirical validity must be evaluated separately.</p></div><span class="status">Hypothesis</span></article>
+        <article class="entry reveal" data-category="science"><div class="entry-type">Physics / Conceptual model</div><div><h3><a href="/research/fame/">FAME</a></h3><p>A developing research concept. Formal definitions, derivations and testable consequences belong in its dedicated research record.</p></div><span class="status">In development</span></article>
+        <article class="entry reveal" data-category="science"><div class="entry-type">Physics / Conceptual model</div><div><h3><a href="/research/fadh/">FADH</a></h3><p>A working concept requiring explicit assumptions, mathematical formulation and comparison with established physical models.</p></div><span class="status">In development</span></article>
+        <article class="entry reveal" data-category="ideas"><div class="entry-type">Philosophy / Foundations</div><div><h3><a href="/research/time-as-a-friction/">Time as a Friction</a></h3><p>A conceptual hypothesis exploring an alternative description of time. It requires operational definitions and falsifiable predictions.</p></div><span class="status">Hypothesis</span></article>
+        <article class="entry reveal" data-category="ideas"><div class="entry-type">Ontology / Language</div><div><h3><a href="/research/ontological-cipher/">Ontological Cipher Hypothesis</a></h3><p>A proposed pasigraphic instruction framework: a script-independent notation system for encoding ontological categories.</p></div><span class="status">Research project</span></article>
+        <article class="entry reveal" data-category="systems"><div class="entry-type">Software / Security</div><div><h3><a href="/research/systems-experiments/">Independent Systems Experiments</a></h3><p>Prototypes exploring software architecture, automation, information handling and defensive security concepts.</p></div><span class="status">In development</span></article>
+      </div>
+      <div class="archive-more">
+        <a class="button ghost" href="/research/">Open the complete research directory <span>↗</span></a>
       </div>
     </div>
   </section>
