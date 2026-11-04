@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111820">
+<meta name="description" content="Research document in the Ontological Cipher public archive."><title>Document — Ontological Cipher</title>
+<style>
+:root{color-scheme:dark;--bg:#111820;--panel:#17212b;--line:#293744;--text:#e7edf2;--muted:#8493a1;--soft:#aebbc6;--accent:#9eb5c9;--max:980px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:inherit}a{color:inherit;text-decoration:none}.top{height:68px;border-bottom:1px solid var(--line);background:#151f29}.nav{max-width:var(--max);height:100%;padding:0 24px;margin:auto;display:flex;align-items:center;justify-content:space-between}.brand{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.back{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);border-bottom:1px solid #637180;padding:7px 0}.main{max-width:var(--max);padding:52px 24px 80px;margin:auto}.kicker{font-size:9px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(32px,6vw,58px);line-height:1.02;letter-spacing:-.06em;margin:15px 0 13px}.desc{font-size:13px;line-height:1.8;color:var(--muted);max-width:720px}.meta{display:flex;flex-wrap:wrap;gap:9px 20px;margin:22px 0 27px;color:var(--soft);font-size:10px}.tag{border:1px solid var(--line);padding:6px 9px;color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:9px;margin:25px 0 32px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:39px;padding:0 15px;border:1px solid #647586;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.btn.primary{background:#dbe5ed;color:#15202a;border-color:#dbe5ed}.preview{border:1px solid var(--line);background:#17212b}.previewhead{padding:13px 15px;border-bottom:1px solid var(--line);font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}iframe{display:block;width:100%;height:min(78vh,850px);border:0;background:#202b35}.imagepreview{display:block;max-width:100%;max-height:78vh;margin:auto}.notice{padding:50px 20px;text-align:center;color:var(--muted);line-height:1.8}.footer{max-width:var(--max);margin:auto;border-top:1px solid var(--line);padding:20px 24px 32px;color:var(--muted);font-size:9px;letter-spacing:.08em}@media(max-width:600px){.nav{padding:0 17px}.main{padding:39px 17px 60px}.meta{gap:9px 13px}iframe{height:68vh}}
+</style><link rel="stylesheet" href="/assets/css/viewport-lock.css">
+</head>
+<body><header class="top"><nav class="nav"><a class="brand" href="./index.html">ONTOLOGICAL CIPHER</a><a class="back" href="./index.html">← Research database</a></nav></header>
+<main class="main" id="main"><div class="notice">Loading document record…</div></main><footer class="footer">ONTOLOGICAL CIPHER · RESEARCH DATABASE</footer>
+<script>
+const main=document.getElementById('main');
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function safeUrl(value){if(!value)return '';try{const u=new URL(value,location.href);return ['http:','https:'].includes(u.protocol)?u.href:''}catch{return ''}}
+function humanSize(n){n=Number(n);if(!Number.isFinite(n)||n<0)return '';return n<1024?n+' B':n<1048576?(n/1024).toFixed(1)+' KB':(n/1048576).toFixed(1)+' MB'}
+const id=new URLSearchParams(location.search).get('id');
+fetch('./catalog.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{
+ const f=(data.files||[]).find(x=>x.id===id&&x.status==='published');
+ if(!f){main.innerHTML='<div class="notice"><h1>Document unavailable</h1>This document may have been unpublished, removed or does not exist.<p><a class="back" href="./index.html">Return to archive</a></p></div>';return}
+ document.title=(f.title||f.file_name||'Document')+' — Ontological Cipher';
+ const preview=safeUrl(f.preview_url),download=safeUrl(f.download_url),ext=String(f.file_type||f.file_name?.split('.').pop()||'').toLowerCase();
+ let viewer='<div class="notice">Browser preview is not available for this file. Use the download option to open the original document.</div>';
+ if(preview&&(ext.includes('pdf')||ext==='application/pdf'))viewer='<iframe title="Document preview" src="'+esc(preview)+'#view=FitH"></iframe>';
+ else if(preview&&['png','jpg','jpeg','webp','gif','image/png','image/jpeg','image/webp','image/gif'].includes(ext))viewer='<img class="imagepreview" alt="'+esc(f.title||f.file_name)+'" src="'+esc(preview)+'">';
+ main.innerHTML='<div class="kicker">'+esc(f.category||'Research document')+' / Public archive</div><h1>'+esc(f.title||f.file_name||'Untitled document')+'</h1><p class="desc">'+esc(f.description||'No description supplied.')+'</p><div class="meta"><span>'+esc(f.file_name||'Document')+'</span><span>'+esc(humanSize(f.file_size))+'</span><span>'+esc(f.published_at||'')+'</span></div><div class="meta">'+(f.tags||[]).map(t=>'<span class="tag">#'+esc(t)+'</span>').join('')+'</div><div class="actions">'+(preview?'<a class="btn" href="'+esc(preview)+'" target="_blank" rel="noopener noreferrer">Open preview ↗</a>':'')+(download?'<a class="btn primary" href="'+esc(download)+'" target="_blank" rel="noopener noreferrer">Download original ↓</a>':'')+'</div><section class="preview"><div class="previewhead">Document preview</div>'+viewer+'</section>';
+}).catch(()=>{main.innerHTML='<div class="notice"><h1>Archive unavailable</h1>Could not load the document catalogue. Please try again later.</div>'});
+</script></body></html>

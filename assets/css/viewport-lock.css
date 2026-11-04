@@ -1,0 +1,180 @@
+/* ONTOLOGICAL CIPHER — RESPONSIVE VIEWPORT SYSTEM */
+
+:root {
+  --page-max: 1440px;
+  --page-gutter: clamp(16px, 4vw, 64px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Disable text selection and accidental dragging */
+body,
+body * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+button,
+a,
+img {
+  -webkit-user-drag: none;
+}
+
+/* Responsive content containers */
+.container,
+.wrap,
+.page-container,
+main {
+  width: min(
+    calc(100% - 2 * var(--page-gutter)),
+    var(--page-max)
+  );
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* Prevent layout overflow */
+section,
+article,
+header,
+footer,
+main,
+.hero,
+.hero-section {
+  min-width: 0;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+span {
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  font-size: clamp(2rem, 7vw, 6.5rem);
+  line-height: 1.02;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  line-height: 1.1;
+}
+
+/* Responsive grids */
+.grid,
+.card-grid,
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+}
+
+.grid > *,
+.card-grid > *,
+.research-grid > * {
+  min-width: 0;
+}
+
+/* Media should stay inside its container */
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.hero img,
+.hero video {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  :root {
+    --page-gutter: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  :root {
+    --page-gutter: 18px;
+  }
+
+  .container,
+  .wrap,
+  .page-container,
+  main {
+    width: calc(100% - 36px);
+  }
+
+  .grid,
+  .card-grid,
+  .research-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  h1 {
+    font-size: clamp(2rem, 11vw, 4rem);
+  }
+
+  .hero {
+    min-height: min(78svh, 720px);
+  }
+
+  nav,
+  .navigation {
+    max-width: 100%;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
